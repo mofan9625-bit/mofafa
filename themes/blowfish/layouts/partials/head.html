@@ -115,7 +115,9 @@
     <meta name="fediverse:creator" content="{{ . }}">
   {{ end }}
 
-  {{ $alg := .Site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $alg := .Site.Params.fingerprintAlgorithm }}
+  {{ if eq $alg nil }}{{ $alg = "sha512" }}{{ end }}
+  {{ if eq $alg false }}{{ $alg = "" }}{{ end }}
 
   {{/* CSS */}}
   {{ $cssResources := slice }}
@@ -129,12 +131,15 @@
   {{ if not .Site.Params.disableImageZoom | default true }}
     {{ $cssResources = $cssResources | append (resources.Get "lib/zoom/style.css") }}
   {{ end }}
-  {{ $bundleCSS := $cssResources | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint $alg }}
+  {{ $bundleCSS := $cssResources | resources.Concat "css/main.bundle.css" | resources.Minify }}
+  {{ if $alg }}
+    {{ $bundleCSS = $bundleCSS | resources.Fingerprint $alg }}
+  {{ end }}
   <link
     type="text/css"
     rel="stylesheet"
     href="{{ $bundleCSS.RelPermalink }}"
-    integrity="{{ $bundleCSS.Data.Integrity }}">
+    {{ if $alg }}integrity="{{ $bundleCSS.Data.Integrity }}"{{ end }}>
 
   {{/* JS loaded immediately */}}
   {{ $jsAppearance := resources.Get "js/appearance.js" | resources.ExecuteAsTemplate "js/appearance.js" . | resources.Minify | resources.Fingerprint $alg }}
