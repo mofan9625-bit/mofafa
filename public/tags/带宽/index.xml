@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>带宽 on 魔法博客</title>
+    <link>https://mofaclashjichang.com/tags/%E5%B8%A6%E5%AE%BD/</link>
+    <description>Recent content in 带宽 on 魔法博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法博客</copyright>
+    <lastBuildDate>Wed, 23 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E5%B8%A6%E5%AE%BD/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>延迟低为什么还是卡？机场节点丢包、抖动、带宽与稳定性详解</title>
+      <link>https://mofaclashjichang.com/posts/2026-latency-packet-loss-jitter-guide/</link>
+      <pubDate>Wed, 23 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-latency-packet-loss-jitter-guide/</guid>
+      <description>延迟只是一个指标，丢包、抖动和持续带宽决定真实体验。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

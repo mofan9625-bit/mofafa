@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clash订阅 on 魔法博客</title>
+    <link>https://mofaclashjichang.com/tags/clash%E8%AE%A2%E9%98%85/</link>
+    <description>Recent content in Clash订阅 on 魔法博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法博客</copyright>
+    <lastBuildDate>Tue, 22 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/clash%E8%AE%A2%E9%98%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>机场订阅更新失败怎么办？403、404、超时、无节点完整排查指南</title>
+      <link>https://mofaclashjichang.com/posts/2026-subscription-update-failed-troubleshooting/</link>
+      <pubDate>Tue, 22 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-subscription-update-failed-troubleshooting/</guid>
+      <description>从订阅地址、网络、客户端格式到服务后台逐步排查更新失败。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

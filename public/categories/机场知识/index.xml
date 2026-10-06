@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>机场知识 on 魔法博客</title>
+    <link>https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/</link>
+    <description>Recent content in 机场知识 on 魔法博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法博客</copyright>
+    <lastBuildDate>Sat, 03 Oct 2026 10:30:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>一元机场为什么不能用？低价套餐背后的超售、限速与失联成本</title>
+      <link>https://mofaclashjichang.com/posts/2026-why-one-yuan-airports-are-unreliable/</link>
+      <pubDate>Sat, 03 Oct 2026 10:30:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-why-one-yuan-airports-are-unreliable/</guid>
+      <description>一元套餐降低了购买门槛，却无法消除线路和运维成本。真正要比较的是晚间可用性、售后、出口质量与失败后的时间成本。</description>
+      
+    </item>
+    
+    <item>
+      <title>免费机场为什么不能用？从失联、限速到隐私风险一次讲清</title>
+      <link>https://mofaclashjichang.com/posts/2026-why-free-airports-are-unreliable/</link>
+      <pubDate>Sat, 03 Oct 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-why-free-airports-are-unreliable/</guid>
+      <description>免费线路看似省钱，却常把成本转化为等待时间、账号风险和不可预测的中断。本文帮你判断哪些场景不能依赖免费服务。</description>
+      
+    </item>
+    
+    <item>
+      <title>机场流量套餐怎么选？从60GB到600GB的真实用量估算指南</title>
+      <link>https://mofaclashjichang.com/posts/2026-airport-data-plan-calculator/</link>
+      <pubDate>Thu, 24 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-airport-data-plan-calculator/</guid>
+      <description>根据真实使用场景估算每月流量，再选择60GB、120GB、300GB或600GB套餐。</description>
+      
+    </item>
+    
+    <item>
+      <title>延迟低为什么还是卡？机场节点丢包、抖动、带宽与稳定性详解</title>
+      <link>https://mofaclashjichang.com/posts/2026-latency-packet-loss-jitter-guide/</link>
+      <pubDate>Wed, 23 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-latency-packet-loss-jitter-guide/</guid>
+      <description>延迟只是一个指标，丢包、抖动和持续带宽决定真实体验。</description>
+      
+    </item>
+    
+    <item>
+      <title>IEPL、IPLC、BGP、CN2 到底有什么区别？2026 机场线路类型选择指南</title>
+      <link>https://mofaclashjichang.com/posts/2026-iepl-iplc-bgp-cn2-line-guide/</link>
+      <pubDate>Sun, 20 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-iepl-iplc-bgp-cn2-line-guide/</guid>
+      <description>线路名称很多，但入口、跨境传输和出口才是实际体验的关键。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

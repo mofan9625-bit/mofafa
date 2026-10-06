@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具使用 on 魔法博客</title>
+    <link>https://mofaclashjichang.com/tools/</link>
+    <description>Recent content in 工具使用 on 魔法博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法博客</copyright>
+    <atom:link href="https://mofaclashjichang.com/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Clash Meta for Android 使用教程</title>
+      <link>https://mofaclashjichang.com/tools/clash-meta-for-android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mofaclashjichang.com/tools/clash-meta-for-android/</guid>
+      <description>&lt;p&gt;Clash Meta for Android 是使用 Clash.Meta 核心的 Android 图形客户端。官方项目要求 Android 5.0 及以上，推荐 Android 7.0 及以上；客户端本身不提供线路服务。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Karing 使用教程</title>
+      <link>https://mofaclashjichang.com/tools/karing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mofaclashjichang.com/tools/karing/</guid>
+      <description>&lt;p&gt;Karing 是基于 sing-box 的多平台图形客户端，兼容 Clash、V2Ray/V2Fly、sing-box、Shadowsocks 等常见配置与订阅格式，并提供适合新用户的简化设置。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Shadowrocket 使用教程</title>
+      <link>https://mofaclashjichang.com/tools/shadowrocket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mofaclashjichang.com/tools/shadowrocket/</guid>
+      <description>&lt;p&gt;Shadowrocket 是 Apple 平台的规则代理客户端。客户端本身不提供线路或订阅，使用前需要准备由服务提供方提供的有效配置。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>v2rayN 使用教程</title>
+      <link>https://mofaclashjichang.com/tools/v2rayn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mofaclashjichang.com/tools/v2rayn/</guid>
+      <description>&lt;p&gt;v2rayN 是支持 Windows、Linux 和 macOS 的桌面图形客户端，可配合 Xray、sing-box 等核心使用。软件本身不包含可用线路。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>v2rayNG 使用教程</title>
+      <link>https://mofaclashjichang.com/tools/v2rayng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mofaclashjichang.com/tools/v2rayng/</guid>
+      <description>&lt;p&gt;v2rayNG 是 Android 平台的 V2Ray 客户端，官方项目支持 Xray 和 v2fly 核心。客户端本身不提供线路或订阅服务。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

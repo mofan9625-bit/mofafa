@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>代理客户端 on 魔法博客</title>
+    <link>https://mofaclashjichang.com/tags/%E4%BB%A3%E7%90%86%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
+    <description>Recent content in 代理客户端 on 魔法博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法博客</copyright>
+    <lastBuildDate>Wed, 30 Sep 2026 16:20:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E4%BB%A3%E7%90%86%E5%AE%A2%E6%88%B7%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2026 Clash Verge Rev 使用说明教程：下载安装、导入订阅与节点选择</title>
+      <link>https://mofaclashjichang.com/posts/2026-clash-verge-rev-guide/</link>
+      <pubDate>Wed, 30 Sep 2026 16:20:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-clash-verge-rev-guide/</guid>
+      <description>从下载安装到导入订阅、选择节点、开启系统代理和排查连接故障，一篇读懂 2026 年 Clash Verge Rev 的基础使用方法。</description>
+      
+    </item>
+    
+    <item>
+      <title>Windows、macOS、iPhone、Android代理客户端怎么选？2026工具选择指南</title>
+      <link>https://mofaclashjichang.com/posts/2026-proxy-client-selection-guide/</link>
+      <pubDate>Sat, 26 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-proxy-client-selection-guide/</guid>
+      <description>根据系统、订阅格式和使用难度选择合适客户端。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

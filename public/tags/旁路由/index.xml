@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>旁路由 on 魔法博客</title>
+    <link>https://mofaclashjichang.com/tags/%E6%97%81%E8%B7%AF%E7%94%B1/</link>
+    <description>Recent content in 旁路由 on 魔法博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法博客</copyright>
+    <lastBuildDate>Mon, 28 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E6%97%81%E8%B7%AF%E7%94%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>路由器代理还是每台设备装客户端？电视、Apple TV与家庭网络方案对比</title>
+      <link>https://mofaclashjichang.com/posts/2026-router-proxy-vs-device-client-guide/</link>
+      <pubDate>Mon, 28 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-router-proxy-vs-device-client-guide/</guid>
+      <description>家庭多设备应该在路由器统一配置，还是每台设备单独安装客户端？</description>
+      
+    </item>
+    
+  </channel>
+</rss>
