@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>60GB on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/60gb/</link>
+    <link>http://localhost:1315/tags/60gb/</link>
     <description>Recent content in 60GB on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Thu, 24 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/60gb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/60gb/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>机场流量套餐怎么选？从60GB到600GB的真实用量估算指南</title>
-      <link>https://mofaclashjichang.com/posts/2026-airport-data-plan-calculator/</link>
+      <link>http://localhost:1315/posts/2026-airport-data-plan-calculator/</link>
       <pubDate>Thu, 24 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-airport-data-plan-calculator/</guid>
+      <guid>http://localhost:1315/posts/2026-airport-data-plan-calculator/</guid>
       <description>根据真实使用场景估算每月流量，再选择60GB、120GB、300GB或600GB套餐。</description>
       
     </item>

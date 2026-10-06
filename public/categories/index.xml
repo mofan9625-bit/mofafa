@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 魔法博客</title>
-    <link>https://mofaclashjichang.com/categories/</link>
+    <link>http://localhost:1315/categories/</link>
     <description>Recent content in Categories on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Sat, 03 Oct 2026 10:30:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2026 10:30:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>安全指南</title>
-      <link>https://mofaclashjichang.com/categories/%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/</link>
+      <link>http://localhost:1315/categories/%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/</link>
       <pubDate>Sat, 03 Oct 2026 10:30:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/categories/%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/</guid>
+      <guid>http://localhost:1315/categories/%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>机场知识</title>
-      <link>https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/</link>
+      <link>http://localhost:1315/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Sat, 03 Oct 2026 10:30:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/</guid>
+      <guid>http://localhost:1315/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>使用教程</title>
-      <link>https://mofaclashjichang.com/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+      <link>http://localhost:1315/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
       <pubDate>Wed, 30 Sep 2026 16:20:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+      <guid>http://localhost:1315/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>机场测评</title>
-      <link>https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</link>
+      <link>http://localhost:1315/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</link>
       <pubDate>Wed, 30 Sep 2026 13:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</guid>
+      <guid>http://localhost:1315/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</guid>
       <description></description>
       
     </item>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>隐私安全 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8/</link>
+    <link>http://localhost:1315/tags/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8/</link>
     <description>Recent content in 隐私安全 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Sat, 03 Oct 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>免费机场为什么不能用？从失联、限速到隐私风险一次讲清</title>
-      <link>https://mofaclashjichang.com/posts/2026-why-free-airports-are-unreliable/</link>
+      <link>http://localhost:1315/posts/2026-why-free-airports-are-unreliable/</link>
       <pubDate>Sat, 03 Oct 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-why-free-airports-are-unreliable/</guid>
+      <guid>http://localhost:1315/posts/2026-why-free-airports-are-unreliable/</guid>
       <description>免费线路看似省钱，却常把成本转化为等待时间、账号风险和不可预测的中断。本文帮你判断哪些场景不能依赖免费服务。</description>
       
     </item>

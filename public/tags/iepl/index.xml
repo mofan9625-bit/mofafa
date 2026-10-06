@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IEPL on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/iepl/</link>
+    <link>http://localhost:1315/tags/iepl/</link>
     <description>Recent content in IEPL on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Sun, 20 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/iepl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/iepl/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>IEPL、IPLC、BGP、CN2 到底有什么区别？2026 机场线路类型选择指南</title>
-      <link>https://mofaclashjichang.com/posts/2026-iepl-iplc-bgp-cn2-line-guide/</link>
+      <link>http://localhost:1315/posts/2026-iepl-iplc-bgp-cn2-line-guide/</link>
       <pubDate>Sun, 20 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-iepl-iplc-bgp-cn2-line-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-iepl-iplc-bgp-cn2-line-guide/</guid>
       <description>线路名称很多，但入口、跨境传输和出口才是实际体验的关键。</description>
       
     </item>

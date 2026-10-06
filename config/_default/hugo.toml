@@ -4,7 +4,6 @@
 
 theme = "blowfish"
 baseURL = "https://mofaclashjichang.com/"
-relativeURLs = true
 title = "魔法博客"
 defaultContentLanguage = "zh-cn"
 disableLanguages = ["de", "en", "es", "fr", "it", "ja", "pt-br", "pt-pt"]

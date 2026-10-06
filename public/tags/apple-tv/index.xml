@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apple TV on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/apple-tv/</link>
+    <link>http://localhost:1315/tags/apple-tv/</link>
     <description>Recent content in Apple TV on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Wed, 30 Sep 2026 12:45:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/apple-tv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2026 12:45:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/apple-tv/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2026 Netflix / Disney&#43; / YouTube 4K 解锁机场推荐：流媒体秒开与防跳验证避坑</title>
-      <link>https://mofaclashjichang.com/posts/2026-netflix-disney-youtube-4k-airport-guide/</link>
+      <link>http://localhost:1315/posts/2026-netflix-disney-youtube-4k-airport-guide/</link>
       <pubDate>Wed, 30 Sep 2026 12:45:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-netflix-disney-youtube-4k-airport-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-netflix-disney-youtube-4k-airport-guide/</guid>
       <description>从地区库、代理识别、4K持续带宽和Apple TV设备条件出发，教你测试Netflix、Disney+和YouTube节点。</description>
       
     </item>
     
     <item>
       <title>路由器代理还是每台设备装客户端？电视、Apple TV与家庭网络方案对比</title>
-      <link>https://mofaclashjichang.com/posts/2026-router-proxy-vs-device-client-guide/</link>
+      <link>http://localhost:1315/posts/2026-router-proxy-vs-device-client-guide/</link>
       <pubDate>Mon, 28 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-router-proxy-vs-device-client-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-router-proxy-vs-device-client-guide/</guid>
       <description>家庭多设备应该在路由器统一配置，还是每台设备单独安装客户端？</description>
       
     </item>

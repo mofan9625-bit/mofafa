@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>超售 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/%E8%B6%85%E5%94%AE/</link>
+    <link>http://localhost:1315/tags/%E8%B6%85%E5%94%AE/</link>
     <description>Recent content in 超售 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Sat, 03 Oct 2026 10:30:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E8%B6%85%E5%94%AE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2026 10:30:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/%E8%B6%85%E5%94%AE/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>一元机场为什么不能用？低价套餐背后的超售、限速与失联成本</title>
-      <link>https://mofaclashjichang.com/posts/2026-why-one-yuan-airports-are-unreliable/</link>
+      <link>http://localhost:1315/posts/2026-why-one-yuan-airports-are-unreliable/</link>
       <pubDate>Sat, 03 Oct 2026 10:30:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-why-one-yuan-airports-are-unreliable/</guid>
+      <guid>http://localhost:1315/posts/2026-why-one-yuan-airports-are-unreliable/</guid>
       <description>一元套餐降低了购买门槛，却无法消除线路和运维成本。真正要比较的是晚间可用性、售后、出口质量与失败后的时间成本。</description>
       
     </item>

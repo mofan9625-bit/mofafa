@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>多设备管理 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/</link>
+    <link>http://localhost:1315/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/</link>
     <description>Recent content in 多设备管理 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Tue, 29 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>机场订阅地址泄露怎么办？账号安全、重置链接与多设备管理指南</title>
-      <link>https://mofaclashjichang.com/posts/2026-subscription-security-account-protection/</link>
+      <link>http://localhost:1315/posts/2026-subscription-security-account-protection/</link>
       <pubDate>Tue, 29 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-subscription-security-account-protection/</guid>
+      <guid>http://localhost:1315/posts/2026-subscription-security-account-protection/</guid>
       <description>订阅地址相当于访问凭据，泄露后应立即重置并检查设备。</description>
       
     </item>

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>套餐选择 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/%E5%A5%97%E9%A4%90%E9%80%89%E6%8B%A9/</link>
+    <link>http://localhost:1315/tags/%E5%A5%97%E9%A4%90%E9%80%89%E6%8B%A9/</link>
     <description>Recent content in 套餐选择 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Sat, 03 Oct 2026 10:30:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E5%A5%97%E9%A4%90%E9%80%89%E6%8B%A9/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2026 10:30:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/%E5%A5%97%E9%A4%90%E9%80%89%E6%8B%A9/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>一元机场为什么不能用？低价套餐背后的超售、限速与失联成本</title>
-      <link>https://mofaclashjichang.com/posts/2026-why-one-yuan-airports-are-unreliable/</link>
+      <link>http://localhost:1315/posts/2026-why-one-yuan-airports-are-unreliable/</link>
       <pubDate>Sat, 03 Oct 2026 10:30:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-why-one-yuan-airports-are-unreliable/</guid>
+      <guid>http://localhost:1315/posts/2026-why-one-yuan-airports-are-unreliable/</guid>
       <description>一元套餐降低了购买门槛，却无法消除线路和运维成本。真正要比较的是晚间可用性、售后、出口质量与失败后的时间成本。</description>
       
     </item>
     
     <item>
       <title>机场流量套餐怎么选？从60GB到600GB的真实用量估算指南</title>
-      <link>https://mofaclashjichang.com/posts/2026-airport-data-plan-calculator/</link>
+      <link>http://localhost:1315/posts/2026-airport-data-plan-calculator/</link>
       <pubDate>Thu, 24 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-airport-data-plan-calculator/</guid>
+      <guid>http://localhost:1315/posts/2026-airport-data-plan-calculator/</guid>
       <description>根据真实使用场景估算每月流量，再选择60GB、120GB、300GB或600GB套餐。</description>
       
     </item>

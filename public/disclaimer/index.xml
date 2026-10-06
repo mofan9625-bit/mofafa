@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>免责声明 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/disclaimer/</link>
+    <link>http://localhost:1315/disclaimer/</link>
     <description>Recent content in 免责声明 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <atom:link href="https://mofaclashjichang.com/disclaimer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1315/disclaimer/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>网络排查 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/%E7%BD%91%E7%BB%9C%E6%8E%92%E6%9F%A5/</link>
+    <link>http://localhost:1315/tags/%E7%BD%91%E7%BB%9C%E6%8E%92%E6%9F%A5/</link>
     <description>Recent content in 网络排查 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Fri, 25 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E7%BD%91%E7%BB%9C%E6%8E%92%E6%9F%A5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/%E7%BD%91%E7%BB%9C%E6%8E%92%E6%9F%A5/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>同一个机场手机能用、宽带不能用？移动数据与Wi-Fi连接差异排查</title>
-      <link>https://mofaclashjichang.com/posts/2026-mobile-data-wifi-airport-difference/</link>
+      <link>http://localhost:1315/posts/2026-mobile-data-wifi-airport-difference/</link>
       <pubDate>Fri, 25 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-mobile-data-wifi-airport-difference/</guid>
+      <guid>http://localhost:1315/posts/2026-mobile-data-wifi-airport-difference/</guid>
       <description>通过交叉测试快速判断故障来自机场节点、家庭宽带还是手机网络。</description>
       
     </item>

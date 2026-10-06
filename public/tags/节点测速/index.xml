@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>节点测速 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/%E8%8A%82%E7%82%B9%E6%B5%8B%E9%80%9F/</link>
+    <link>http://localhost:1315/tags/%E8%8A%82%E7%82%B9%E6%B5%8B%E9%80%9F/</link>
     <description>Recent content in 节点测速 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Mon, 21 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E8%8A%82%E7%82%B9%E6%B5%8B%E9%80%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/%E8%8A%82%E7%82%B9%E6%B5%8B%E9%80%9F/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>机场晚高峰怎么测速才准确？2026 延迟、速度、丢包与视频实测教程</title>
-      <link>https://mofaclashjichang.com/posts/2026-airport-evening-peak-speed-test-guide/</link>
+      <link>http://localhost:1315/posts/2026-airport-evening-peak-speed-test-guide/</link>
       <pubDate>Mon, 21 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-airport-evening-peak-speed-test-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-airport-evening-peak-speed-test-guide/</guid>
       <description>一套可重复的晚高峰测试流程，帮助判断节点是否真的稳定。</description>
       
     </item>

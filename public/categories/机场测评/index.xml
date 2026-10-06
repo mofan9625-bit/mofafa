@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>机场测评 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</link>
+    <link>http://localhost:1315/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</link>
     <description>Recent content in 机场测评 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Wed, 30 Sep 2026 13:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2026 13:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>按量付费/不限时轻量机场推荐：适合备用与低频翻墙的性价比之选</title>
-      <link>https://mofaclashjichang.com/posts/2026-pay-as-you-go-no-expiry-airport-guide/</link>
+      <link>http://localhost:1315/posts/2026-pay-as-you-go-no-expiry-airport-guide/</link>
       <pubDate>Wed, 30 Sep 2026 13:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-pay-as-you-go-no-expiry-airport-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-pay-as-you-go-no-expiry-airport-guide/</guid>
       <description>不想每月订阅？本文对比云界线、大佬云、环球梯的一次性流量包，并讲清有效期、单位流量成本和备用节点测试方法。</description>
       
     </item>
     
     <item>
       <title>2026 Netflix / Disney&#43; / YouTube 4K 解锁机场推荐：流媒体秒开与防跳验证避坑</title>
-      <link>https://mofaclashjichang.com/posts/2026-netflix-disney-youtube-4k-airport-guide/</link>
+      <link>http://localhost:1315/posts/2026-netflix-disney-youtube-4k-airport-guide/</link>
       <pubDate>Wed, 30 Sep 2026 12:45:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-netflix-disney-youtube-4k-airport-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-netflix-disney-youtube-4k-airport-guide/</guid>
       <description>从地区库、代理识别、4K持续带宽和Apple TV设备条件出发，教你测试Netflix、Disney+和YouTube节点。</description>
       
     </item>
     
     <item>
       <title>机场突然跑路或失联？2026 科学上网避坑指南与主备双持防断网策略</title>
-      <link>https://mofaclashjichang.com/posts/2026-airport-exit-scam-warning-backup-strategy/</link>
+      <link>http://localhost:1315/posts/2026-airport-exit-scam-warning-backup-strategy/</link>
       <pubDate>Wed, 30 Sep 2026 12:30:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-airport-exit-scam-warning-backup-strategy/</guid>
+      <guid>http://localhost:1315/posts/2026-airport-exit-scam-warning-backup-strategy/</guid>
       <description>从价格、客服、节点、公告和续费策略识别机场跑路前兆，并用不同运营主体的一主一备方案降低突然断网风险。</description>
       
     </item>
     
     <item>
       <title>解决 ChatGPT / Claude 1020 报错与 IP 拦截：2026 原生住宅 IP 专线机场实测</title>
-      <link>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</link>
+      <link>http://localhost:1315/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</link>
       <pubDate>Wed, 30 Sep 2026 12:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</guid>
       <description>从 Cloudflare 1020、IP 风控到账号申诉，系统讲清机房 IP、广播 IP、原生住宅 IP和专线出口的区别。</description>
       
     </item>

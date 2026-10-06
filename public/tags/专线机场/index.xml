@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>专线机场 on 魔法博客</title>
-    <link>https://mofaclashjichang.com/tags/%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA/</link>
+    <link>http://localhost:1315/tags/%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA/</link>
     <description>Recent content in 专线机场 on 魔法博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 魔法博客</copyright>
-    <lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1315/tags/%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>解决 ChatGPT / Claude 1020 报错与 IP 拦截：2026 原生住宅 IP 专线机场实测</title>
-      <link>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</link>
+      <link>http://localhost:1315/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</link>
       <pubDate>Wed, 30 Sep 2026 12:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</guid>
       <description>从 Cloudflare 1020、IP 风控到账号申诉，系统讲清机房 IP、广播 IP、原生住宅 IP和专线出口的区别。</description>
       
     </item>
     
     <item>
       <title>IEPL、IPLC、BGP、CN2 到底有什么区别？2026 机场线路类型选择指南</title>
-      <link>https://mofaclashjichang.com/posts/2026-iepl-iplc-bgp-cn2-line-guide/</link>
+      <link>http://localhost:1315/posts/2026-iepl-iplc-bgp-cn2-line-guide/</link>
       <pubDate>Sun, 20 Sep 2026 10:00:00 +0800</pubDate>
       
-      <guid>https://mofaclashjichang.com/posts/2026-iepl-iplc-bgp-cn2-line-guide/</guid>
+      <guid>http://localhost:1315/posts/2026-iepl-iplc-bgp-cn2-line-guide/</guid>
       <description>线路名称很多，但入口、跨境传输和出口才是实际体验的关键。</description>
       
     </item>
