@@ -79,7 +79,7 @@
         </div>
       </div>
       {{ $fetchRepo := resources.Get "js/fetch-repo.js" }}
-      {{ $fetchRepo = $fetchRepo | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha512") }}
+      {{ $fetchRepo = $fetchRepo | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm ) }}
       <script
         async
         type="text/javascript"

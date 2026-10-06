@@ -10,7 +10,7 @@
   </div>
 </div>
 {{ $backgroundBlur := resources.Get "js/background-blur.js" }}
-{{ $backgroundBlur = $backgroundBlur | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+{{ $backgroundBlur = $backgroundBlur | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
 <script
   type="text/javascript"
   src="{{ $backgroundBlur.RelPermalink }}"

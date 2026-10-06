@@ -3,7 +3,7 @@
   {{ $mermaidLib := resources.Get "lib/mermaid/mermaid.min.js" }}
   {{ $mermaidConfig := resources.Get "js/mermaid.js" }}
   {{ $mermaidConfig := $mermaidConfig | resources.Minify }}
-  {{ $mermaidJS := slice $mermaidLib $mermaidConfig | resources.Concat "js/mermaid.bundle.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $mermaidJS := slice $mermaidLib $mermaidConfig | resources.Concat "js/mermaid.bundle.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script
     defer
     type="text/javascript"
@@ -16,7 +16,7 @@
   {{ $chartLib := resources.Get "lib/chart/chart.min.js" }}
   {{ $chartConfig := resources.Get "js/chart.js" }}
   {{ $chartConfig := $chartConfig | resources.Minify }}
-  {{ $chartJS := slice $chartLib $chartConfig | resources.Concat "js/chart.bundle.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $chartJS := slice $chartLib $chartConfig | resources.Concat "js/chart.bundle.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script
     defer
     type="text/javascript"
@@ -27,7 +27,7 @@
 {{/* Katex */}}
 {{ if .Page.HasShortcode "katex" }}
   {{ $katexCSS := resources.Get "lib/katex/katex.min.css" }}
-  {{ $katexCSS := $katexCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $katexCSS := $katexCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <link
     type="text/css"
     rel="stylesheet"
@@ -35,7 +35,7 @@
     integrity="{{ $katexCSS.Data.Integrity }}">
   {{ $katexLib := resources.Get "lib/katex/katex.min.js" }}
   {{ $katexRenderLib := resources.Get "lib/katex/auto-render.min.js" }}
-  {{ $katexJS := slice $katexLib $katexRenderLib | resources.Concat "js/katex.bundle.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $katexJS := slice $katexLib $katexRenderLib | resources.Concat "js/katex.bundle.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script
     defer
     type="text/javascript"
@@ -50,21 +50,21 @@
 
 {{/* TypeIt */}}
 {{ if .Page.HasShortcode "typeit" }}
-  {{ $typeitLib := resources.Get "lib/typeit/typeit.umd.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $typeitLib := resources.Get "lib/typeit/typeit.umd.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script defer src="{{ $typeitLib.RelPermalink }}" integrity="{{ $typeitLib.Data.Integrity }}"></script>
 {{ end }}
 
 {{/* Packery */}}
 {{ if .Page.HasShortcode "gallery" }}
   {{ $galleryCSS := resources.Get "css/components/gallery.css" }}
-  {{ $galleryCSS = $galleryCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $galleryCSS = $galleryCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <link
     type="text/css"
     rel="stylesheet"
     href="{{ $galleryCSS.RelPermalink }}"
     integrity="{{ $galleryCSS.Data.Integrity }}">
   {{ $packeryLib := resources.Get "lib/packery/packery.pkgd.min.js" }}
-  {{ $packeryLib = $packeryLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $packeryLib = $packeryLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script
     defer
     type="text/javascript"
@@ -72,7 +72,7 @@
     integrity="{{ $packeryLib.Data.Integrity }}"></script>
 
   {{ $jsShortcodeGallery := resources.Get "js/shortcodes/gallery.js" }}
-  {{ $jsShortcodeGallery = $jsShortcodeGallery | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $jsShortcodeGallery = $jsShortcodeGallery | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script
     type="text/javascript"
     src="{{ $jsShortcodeGallery.RelPermalink }}"
@@ -82,14 +82,14 @@
 {{/* tw-elements */}}
 {{ if or (.Page.HasShortcode "carousel") (.Page.HasShortcode "timeline") }}
   {{ $carouselCSS := resources.Get "css/components/carousel.css" }}
-  {{ $carouselCSS = $carouselCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $carouselCSS = $carouselCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <link
     type="text/css"
     rel="stylesheet"
     href="{{ $carouselCSS.RelPermalink }}"
     integrity="{{ $carouselCSS.Data.Integrity }}">
   {{ $twelementsLib := resources.Get "lib/tw-elements/index.min.js" }}
-  {{ $twelementsLib = $twelementsLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $twelementsLib = $twelementsLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script
     defer
     type="text/javascript"
@@ -100,14 +100,14 @@
 {{/* youtubeLite */}}
 {{ if .Page.HasShortcode "youtubeLite" }}
   {{ $youtubeLiteCSS := resources.Get "lib/lite-youtube-embed/lite-yt-embed.css" }}
-  {{ $youtubeLiteCSS = $youtubeLiteCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $youtubeLiteCSS = $youtubeLiteCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <link
     type="text/css"
     rel="stylesheet"
     href="{{ $youtubeLiteCSS.RelPermalink }}"
     integrity="{{ $youtubeLiteCSS.Data.Integrity }}">
   {{ $youtubeLiteLib := resources.Get "lib/lite-youtube-embed/lite-yt-embed.js" }}
-  {{ $youtubeLiteLib = $youtubeLiteLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $youtubeLiteLib = $youtubeLiteLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
   <script
     type="text/javascript"
     src="{{ $youtubeLiteLib.RelPermalink }}"
@@ -139,7 +139,7 @@
     {{ end }}
   {{ end }}
   {{ $repoCardCSS := resources.FromString "css/repo-cards.css" (delimit $cssRules "\n")
-    | minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512")
+    | minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm )
   }}
   <link rel="stylesheet" href="{{ $repoCardCSS.RelPermalink }}" integrity="{{ $repoCardCSS.Data.Integrity }}">
 {{ end }}
@@ -147,7 +147,7 @@
 {{/* tabs */}}
 {{ if .Page.HasShortcode "tabs" }}
   {{ $tabJS := resources.Get "js/shortcodes/tabs.js" }}
-  {{ with $tabJS | minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ with $tabJS | minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm ) }}
     <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
   {{ end }}
 {{ end }}
@@ -155,7 +155,7 @@
 {{/* Firebase */}}
 {{ if site.Params.firebase.apiKey }}
   {{ $firebase := resources.Get "js/firebase.js" }}
-  {{ $firebase = $firebase | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $firebase = $firebase | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm ) }}
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   {{/* Load the Firebase module (and its ~300KB of gstatic imports) after the
     page is idle so it never competes with rendering-critical resources. */}}

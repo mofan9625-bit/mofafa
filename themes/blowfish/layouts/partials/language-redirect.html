@@ -24,7 +24,7 @@
   <script>
     window.BlowfishLanguageRedirectConfig = {{ $config | jsonify | safeJS }};
   </script>
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $alg := site.Params.fingerprintAlgorithm  }}
   {{ with resources.Get "js/language-redirect.js" }}
     {{ $jsLanguageRedirect := . | resources.Minify | resources.Fingerprint $alg }}
     <script

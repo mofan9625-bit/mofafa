@@ -22,7 +22,7 @@
       <div class="absolute inset-0 bg-neutral/60 dark:bg-neutral-800/50"></div>
     </div>
     {{ $heroFade := resources.Get "js/hero-scroll-fade.js" }}
-    {{ $heroFade = $heroFade | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha512") }}
+    {{ $heroFade = $heroFade | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm ) }}
     <script
       type="text/javascript"
       src="{{ $heroFade.RelPermalink }}"

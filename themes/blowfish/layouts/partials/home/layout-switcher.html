@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  {{ $jsSwitcher := resources.Get "js/layout-switcher.js" | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha512") }}
+  {{ $jsSwitcher := resources.Get "js/layout-switcher.js" | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm ) }}
   <script
     defer
     type="text/javascript"
