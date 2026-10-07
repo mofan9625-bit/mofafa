@@ -1,0 +1,12 @@
+{
+  "name": "mofafa-blog",
+  "private": true,
+  "scripts": {
+    "build": "hugo",
+    "postbuild": "node scripts/submit-indexnow.mjs public/sitemap.xml",
+    "indexnow": "node scripts/submit-indexnow.mjs public/sitemap.xml"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
