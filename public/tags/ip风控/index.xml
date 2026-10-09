@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IP风控 on 魔法博客</title><link>https://mofaclashjichang.com/tags/ip%E9%A3%8E%E6%8E%A7/</link><description>Recent content in IP风控 on 魔法博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© 2026 魔法博客</copyright><lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/ip%E9%A3%8E%E6%8E%A7/index.xml" rel="self" type="application/rss+xml"/><item><title>解决 ChatGPT / Claude 1020 报错与 IP 拦截：2026 原生住宅 IP 专线机场实测</title><link>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</link><pubDate>Wed, 30 Sep 2026 12:00:00 +0800</pubDate><guid>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</guid><description>从 Cloudflare 1020、IP 风控到账号申诉，系统讲清机房 IP、广播 IP、原生住宅 IP和专线出口的区别。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IP风控 on 魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南</title>
+    <link>https://mofaclashjichang.com/tags/ip%E9%A3%8E%E6%8E%A7/</link>
+    <description>Recent content in IP风控 on 魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法Clash机场</copyright>
+    <lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/ip%E9%A3%8E%E6%8E%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>解决 ChatGPT / Claude 1020 报错与 IP 拦截：2026 原生住宅 IP 专线机场实测</title>
+      <link>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</link>
+      <pubDate>Wed, 30 Sep 2026 12:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-chatgpt-claude-1020-native-residential-ip-guide/</guid>
+      <description>从 Cloudflare 1020、IP 风控到账号申诉，系统讲清机房 IP、广播 IP、原生住宅 IP和专线出口的区别。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

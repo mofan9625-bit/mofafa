@@ -1,7 +1,7 @@
 locale = "zh-cn"
 label = "简体中文"
 weight = 1
-title = "魔法博客"
+title = "魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南"
 
 [params]
   displayName = "简体中文"
@@ -9,11 +9,11 @@ title = "魔法博客"
   rtl = false
   dateFormat = "2006-01-02"
   logo = "img/blowfish_logo_transparent.png"
-  description = "2026 稳定专线机场推荐与晚高峰测速。"
+  description = "提供 2026 最新 Clash / Sing-box / Shadowrocket 订阅节点推荐、IPLC 专线实测及避坑指南，助力跨境办公与 AI 高速访问。"
 
 [params.author]
-  name = "魔法博客"
+  name = "魔法Clash机场"
   image = ""
-  headline = "2026 稳定专线机场推荐与晚高峰测速"
-  bio = "2026 稳定专线机场推荐与晚高峰测速"
+  headline = "2026 稳定高速节点推荐与专线测速指南"
+  bio = "提供 2026 最新 Clash / Sing-box / Shadowrocket 订阅节点推荐、IPLC 专线实测及避坑指南，助力跨境办公与 AI 高速访问。"
   links = []

@@ -1,4 +1,4 @@
 ---
-title: "魔法博客 | 2026 稳定专线机场推荐与晚高峰测速"
-description: "2026 稳定专线机场推荐与晚高峰测速，专注高速、稳定、低延迟的 IEPL/IPLC 专线机场测评。"
+title: "魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南"
+description: "提供 2026 最新 Clash / Sing-box / Shadowrocket 订阅节点推荐、IPLC 专线实测及避坑指南，助力跨境办公与 AI 高速访问。"
 ---

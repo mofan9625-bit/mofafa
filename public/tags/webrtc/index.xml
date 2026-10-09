@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WebRTC on 魔法博客</title><link>https://mofaclashjichang.com/tags/webrtc/</link><description>Recent content in WebRTC on 魔法博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© 2026 魔法博客</copyright><lastBuildDate>Sun, 27 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/webrtc/index.xml" rel="self" type="application/rss+xml"/><item><title>代理已连接为什么网站仍识别本地地区？DNS、WebRTC与IPv6泄漏排查</title><link>https://mofaclashjichang.com/posts/2026-dns-webrtc-ipv6-leak-guide/</link><pubDate>Sun, 27 Sep 2026 10:00:00 +0800</pubDate><guid>https://mofaclashjichang.com/posts/2026-dns-webrtc-ipv6-leak-guide/</guid><description>连接节点后地区仍不一致，问题可能来自DNS、IPv6或浏览器会话。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WebRTC on 魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南</title>
+    <link>https://mofaclashjichang.com/tags/webrtc/</link>
+    <description>Recent content in WebRTC on 魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 魔法Clash机场</copyright>
+    <lastBuildDate>Sun, 27 Sep 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://mofaclashjichang.com/tags/webrtc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>代理已连接为什么网站仍识别本地地区？DNS、WebRTC与IPv6泄漏排查</title>
+      <link>https://mofaclashjichang.com/posts/2026-dns-webrtc-ipv6-leak-guide/</link>
+      <pubDate>Sun, 27 Sep 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://mofaclashjichang.com/posts/2026-dns-webrtc-ipv6-leak-guide/</guid>
+      <description>连接节点后地区仍不一致，问题可能来自DNS、IPv6或浏览器会话。</description>
+      
+    </item>
+    
+  </channel>
+</rss>
