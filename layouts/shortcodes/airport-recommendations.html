@@ -28,7 +28,8 @@
     border-radius: 1.25rem;
     background: rgb(255 255 255 / 0.78);
     box-shadow: 0 14px 35px rgb(15 23 42 / 0.08);
-    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
 
   .dark .airport-card {
@@ -38,9 +39,14 @@
   }
 
   .airport-card:hover {
-    transform: translateY(-3px);
-    border-color: rgb(59 130 246 / 0.75);
-    box-shadow: 0 18px 40px rgb(37 99 235 / 0.14);
+    transform: translateY(-4px);
+    border-color: rgb(59 130 246 / 0.9);
+    box-shadow: 0 20px 42px rgb(37 99 235 / 0.16);
+  }
+
+  .dark .airport-card:hover {
+    border-color: rgb(96 165 250 / 0.9);
+    box-shadow: 0 20px 42px rgb(0 0 0 / 0.35);
   }
 
   .airport-rank {
@@ -61,6 +67,7 @@
     font-weight: 800;
     letter-spacing: 0.04em;
     box-shadow: 0 7px 18px rgb(37 99 235 / 0.28);
+    pointer-events: none;
   }
 
   .airport-visual {
@@ -72,6 +79,7 @@
     background:
       radial-gradient(circle at 50% 20%, rgb(56 189 248 / 0.16), transparent 55%),
       linear-gradient(145deg, rgb(239 246 255 / 0.75), rgb(255 255 255 / 0));
+    pointer-events: none;
   }
 
   .dark .airport-visual {
@@ -85,6 +93,8 @@
     height: 100%;
     object-fit: contain;
     filter: drop-shadow(0 10px 18px rgb(37 99 235 / 0.2));
+    pointer-events: none;
+    user-select: none;
   }
 
   .airport-lettermark {
@@ -101,6 +111,7 @@
     font-weight: 900;
     letter-spacing: -0.05em;
     box-shadow: 0 16px 30px rgb(37 99 235 / 0.25);
+    pointer-events: none;
   }
 
   .airport-card-body {
@@ -134,12 +145,21 @@
     color: #a1a1aa;
   }
 
+  .airport-card-actions {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.65rem;
+    margin-top: 1rem;
+  }
+
   .airport-card-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     align-self: center;
-    margin-top: 1rem;
     border-radius: 999px;
     padding: 0.55rem 1rem;
     background: linear-gradient(135deg, #38bdf8, #2563eb);
@@ -148,18 +168,7 @@
     font-weight: 750;
     text-decoration: none;
     box-shadow: 0 8px 20px rgb(37 99 235 / 0.2);
-  }
-
-  .airport-card-actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.65rem;
-    margin-top: 1rem;
-  }
-
-  .airport-card-actions .airport-card-link {
-    margin-top: 0;
+    transition: filter 150ms ease, background 150ms ease, color 150ms ease;
   }
 
   .airport-card-link--official {
@@ -191,66 +200,32 @@
 </style>
 
 {{- $airports := slice
-  (dict "rank" "01" "name" "云界线" "mark" "云界" "logo" "/images/airports/yunjiexian-logo.png")
-  (dict "rank" "02" "name" "大佬云" "mark" "大佬" "logo" "/images/airports/dalaoyun-logo.png")
-  (dict "rank" "03" "name" "环球梯" "mark" "环球" "logo" "/images/airports/huanqiuti-logo.png")
-  (dict "rank" "04" "name" "榴莲云" "mark" "榴莲" "logo" "/images/airports/liulianyun-logo.png")
-  (dict "rank" "05" "name" "神行加速" "mark" "神行" "logo" "/images/airports/shenxing-logo.png")
-  (dict "rank" "06" "name" "闪电鼠" "mark" "闪电" "logo" "/images/airports/shandianshu-logo.webp")
+  (dict "rank" "01" "name" "云界线" "mark" "云界" "logo" "/images/airports/yunjiexian-logo.png" "url" "/airports/yunjiexian/" "official" "https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" "btnText" "查看价格与测评 →" "note" "套餐价格、节点测速和适用人群分析。")
+  (dict "rank" "02" "name" "大佬云" "mark" "大佬" "logo" "/images/airports/dalaoyun-logo.png" "url" "/airports/dalaoyun/" "official" "https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" "btnText" "查看套餐分析 →" "note" "套餐价格、流量配置和适用人群分析。")
+  (dict "rank" "03" "name" "环球梯" "mark" "环球" "logo" "/images/airports/huanqiuti-logo.png" "url" "/airports/huanqiuti/" "official" "https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU" "btnText" "查看套餐分析 →" "note" "套餐价格、设备数量和适用人群分析。")
+  (dict "rank" "04" "name" "榴莲云" "mark" "榴莲" "logo" "/images/airports/liulianyun-logo.png" "url" "/airports/liulianyun/" "official" "https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" "btnText" "查看套餐分析 →" "note" "套餐价格、流量配置和适用人群分析。")
+  (dict "rank" "05" "name" "神行加速" "mark" "神行" "logo" "/images/airports/shenxing-logo.png" "url" "/airports/shenxing/" "official" "https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" "btnText" "查看套餐分析 →" "note" "套餐价格、流量配置和适用人群分析。")
+  (dict "rank" "06" "name" "闪电鼠" "mark" "闪电" "logo" "/images/airports/shandianshu-logo.webp" "url" "/airports/shandianshu/" "official" "https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" "btnText" "查看套餐分析 →" "note" "套餐价格、流量配置和适用人群分析。")
 -}}
 
 <div class="airport-grid not-prose" aria-label="机场推荐列表">
   {{- range $airports }}
-    <article class="airport-card">
+    <article class="airport-card" onclick="if (!event.target.closest('.airport-card-link--official')) { window.location.href='{{ .url }}'; }" role="link" tabindex="0" onkeydown="if (event.key === 'Enter' && !event.target.closest('.airport-card-link--official')) { window.location.href='{{ .url }}'; }">
       <span class="airport-rank">TOP {{ .rank }}</span>
       <div class="airport-visual">
         {{- if .logo }}
-          <img class="airport-logo" src="{{ .logo }}" alt="{{ .name }} Logo" loading="lazy" decoding="async">
+          <img class="airport-logo nozoom" src="{{ .logo }}" alt="{{ .name }} Logo" loading="lazy" decoding="async" data-zoomable="false">
         {{- else }}
           <div class="airport-lettermark" aria-hidden="true">{{ .mark }}</div>
         {{- end }}
       </div>
       <div class="airport-card-body">
         <h2 class="airport-card-title">{{ .name }}</h2>
-        {{- if eq .name "云界线" }}
-          <p class="airport-card-note">套餐价格、节点测速和适用人群分析。</p>
-          <div class="airport-card-actions">
-            <a class="airport-card-link" href="/airports/yunjiexian/">查看价格与测评 →</a>
-            <a class="airport-card-link airport-card-link--official" href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="sponsored noopener noreferrer">直达官网 ↗</a>
-          </div>
-        {{- else if eq .name "大佬云" }}
-          <p class="airport-card-note">套餐价格、流量配置和适用人群分析。</p>
-          <div class="airport-card-actions">
-            <a class="airport-card-link" href="/airports/dalaoyun/">查看套餐分析 →</a>
-            <a class="airport-card-link airport-card-link--official" href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" target="_blank" rel="sponsored noopener noreferrer">直达官网 ↗</a>
-          </div>
-        {{- else if eq .name "环球梯" }}
-          <p class="airport-card-note">套餐价格、设备数量和适用人群分析。</p>
-          <div class="airport-card-actions">
-            <a class="airport-card-link" href="/airports/huanqiuti/">查看套餐分析 →</a>
-            <a class="airport-card-link airport-card-link--official" href="https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU" target="_blank" rel="sponsored noopener noreferrer">直达官网 ↗</a>
-          </div>
-        {{- else if eq .name "榴莲云" }}
-          <p class="airport-card-note">套餐价格、流量配置和适用人群分析。</p>
-          <div class="airport-card-actions">
-            <a class="airport-card-link" href="/airports/liulianyun/">查看套餐分析 →</a>
-            <a class="airport-card-link airport-card-link--official" href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="sponsored noopener noreferrer">直达官网 ↗</a>
-          </div>
-        {{- else if eq .name "神行加速" }}
-          <p class="airport-card-note">套餐价格、流量配置和适用人群分析。</p>
-          <div class="airport-card-actions">
-            <a class="airport-card-link" href="/airports/shenxing/">查看套餐分析 →</a>
-            <a class="airport-card-link airport-card-link--official" href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="sponsored noopener noreferrer">直达官网 ↗</a>
-          </div>
-        {{- else if eq .name "闪电鼠" }}
-          <p class="airport-card-note">套餐价格、流量配置和适用人群分析。</p>
-          <div class="airport-card-actions">
-            <a class="airport-card-link" href="/airports/shandianshu/">查看套餐分析 →</a>
-            <a class="airport-card-link airport-card-link--official" href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="sponsored noopener noreferrer">直达官网 ↗</a>
-          </div>
-        {{- else }}
-          <p class="airport-card-note">推荐资料与详细测评将持续补充。</p>
-        {{- end }}
+        <p class="airport-card-note">{{ .note }}</p>
+        <div class="airport-card-actions">
+          <a class="airport-card-link" href="{{ .url }}">{{ .btnText }}</a>
+          <a class="airport-card-link airport-card-link--official" href="{{ .official }}" target="_blank" rel="sponsored noopener noreferrer" onclick="event.stopPropagation()">直达官网 ↗</a>
+        </div>
       </div>
     </article>
   {{- end }}
