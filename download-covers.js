@@ -111,30 +111,31 @@ function updateHtmlFile(filePath) {
   }
 
   let cardIndex = 0;
-  const articleRegex = /<article[\s\S]*?<\/article>/gi;
+  // 精确匹配卡片文章，避免匹配外层大文章容器
+  const articleRegex = /<article\b([^>]*\bclass="[^"]*article-link[^"]*"[^>]*)>([\s\S]*?)<\/article>/gi;
 
-  let newContent = content.replace(articleRegex, (articleHtml) => {
+  let newContent = content.replace(articleRegex, (match, articleAttrs, cardInner) => {
     // 匹配卡片内的迷宫图或已有的 cover 图
-    const hasPlaceholder = /featured\.svg|images\/covers\/cover-\d+\.jpg/i.test(articleHtml);
+    const hasPlaceholder = /featured\.svg|images\/covers\/cover-\d+\.jpg/i.test(cardInner);
     if (!hasPlaceholder) {
-      return articleHtml;
+      return match;
     }
 
     // 提取卡片标题
-    const h2Match = articleHtml.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
+    const h2Match = cardInner.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
     let title = '';
     if (h2Match) {
-      title = h2Match[1].replace(/<[^>]+>/g, '').trim();
+      title = h2Match[1].replace(/<[^>]+>/g, '').replace(/#/g, '').replace(/\s+/g, ' ').trim();
     }
 
-    // 循环分配 cover-1.jpg 到 cover-18.jpg
+    // 循环分配 /images/covers/cover-1.jpg 到 cover-18.jpg
     const coverNum = (cardIndex % 18) + 1;
     cardIndex++;
-    const newSrc = `images/covers/cover-${coverNum}.jpg`;
+    const newSrc = `/images/covers/cover-${coverNum}.jpg`;
 
     // 替换 <img> 标签
     const imgRegex = /<img\b([^>]*(?:featured\.svg|images\/covers\/cover-\d+\.jpg)[^>]*)>/i;
-    return articleHtml.replace(imgRegex, (imgTag, attrs) => {
+    const updatedCardInner = cardInner.replace(imgRegex, (imgTag, attrs) => {
       // 提取原有 class 属性
       const classMatch = attrs.match(/\bclass=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
       const classes = classMatch
@@ -145,12 +146,14 @@ function updateHtmlFile(filePath) {
       if (!title) {
         const altMatch = attrs.match(/\balt=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
         if (altMatch) {
-          title = altMatch[1] || altMatch[2] || altMatch[3] || '';
+          title = (altMatch[1] || altMatch[2] || altMatch[3] || '').replace(/#/g, '').replace(/\s+/g, ' ').trim();
         }
       }
 
       return `<img src="${newSrc}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" fetchpriority="low" class="${classes}" />`;
     });
+
+    return `<article${articleAttrs}>${updatedCardInner}</article>`;
   });
 
   // 处理可能存在于 article 外部的孤立 featured.svg
@@ -159,16 +162,21 @@ function updateHtmlFile(filePath) {
     newContent = newContent.replace(standaloneImgRegex, (imgTag, attrs) => {
       const coverNum = (cardIndex % 18) + 1;
       cardIndex++;
-      const newSrc = `images/covers/cover-${coverNum}.jpg`;
+      const newSrc = `/images/covers/cover-${coverNum}.jpg`;
       const classMatch = attrs.match(/\bclass=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
       const classes = classMatch
         ? (classMatch[1] || classMatch[2] || classMatch[3])
         : 'nozoom not-prose absolute inset-0 h-full w-full object-cover';
       const altMatch = attrs.match(/\balt=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
-      const altText = altMatch ? (altMatch[1] || altMatch[2] || altMatch[3]) : '文章封面';
+      let altText = altMatch ? (altMatch[1] || altMatch[2] || altMatch[3]) : '文章封面';
+      altText = altText.replace(/#/g, '').replace(/\s+/g, ' ').trim();
       return `<img src="${newSrc}" alt="${escapeHtml(altText)}" loading="lazy" decoding="async" fetchpriority="low" class="${classes}" />`;
     });
   }
+
+  // 修复全局相对路径
+  newContent = newContent.replace(/\bsrc="images\/covers\//g, 'src="/images/covers/');
+  newContent = newContent.replace(/\bsrc='images\/covers\//g, "src='/images/covers/");
 
   if (newContent !== content) {
     fs.writeFileSync(filePath, newContent, 'utf-8');

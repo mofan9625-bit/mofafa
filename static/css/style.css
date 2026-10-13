@@ -1,0 +1,51 @@
+/* ==========================================================================
+   魔法Clash机场 - 单品测评与相关文章卡片全局样式
+   ========================================================================== */
+
+/* 单品测评专栏卡片（Reviews Grid）统一布局与图片规范 */
+.article-link--card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 100%;
+}
+
+.article-link--card .thumbnail_card,
+.thumbnail_card {
+  width: 100%;
+  height: 200px !important;
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+}
+
+.article-link--card img,
+.thumbnail_card img,
+img.post-cover {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+/* 相关文章（Related Posts）卡片图片统一规范与兜底样式 */
+.article-link--related .thumbnail_card_related {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+}
+
+.article-link--related img,
+.thumbnail_card_related img,
+article.article-link--related .thumbnail_card_related img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}

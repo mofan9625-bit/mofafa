@@ -73,8 +73,8 @@
       class="flex-none relative overflow-hidden thumbnail_card"
       style="--thumbnail-aspect-ratio: {{ $thumbnailAspectRatio }}">
       <img
-        src="{{ . }}"
-        alt="{{ $page.Title }}"
+        src="{{ . | relURL }}"
+        alt="{{ $page.Title | emojify | plainify }}"
         loading="lazy"
         decoding="async"
         fetchpriority="low"
