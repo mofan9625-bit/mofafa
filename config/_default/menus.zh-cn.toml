@@ -12,6 +12,11 @@
   weight = 20
 
 [[main]]
+  name = "单品测评"
+  url = "/reviews.html"
+  weight = 25
+
+[[main]]
   name = "博客归档"
   url = "/posts/"
   weight = 30
