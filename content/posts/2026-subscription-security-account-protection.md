@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "warning guide"
 ---
 
 机场订阅地址通常包含一段个人令牌。任何拿到完整链接的人，都可能导入节点、消耗流量，甚至导致设备数量或并发限制被触发。

@@ -14,6 +14,8 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+is_review: true
+article_type: "review"
 ---
 
 对于拥有一台电脑、一部手机甚至平板、电视盒子等多设备的用户来说，选择机场往往面临双重考验：一方面担心**“限制在线设备数，换个设备就被踢下线”**；另一方面担心**“遇到连接故障求助无门，客服几天不回工单”**。很多新手刚接触代理软件，遇到配置报错、节点失联就只能干着急。

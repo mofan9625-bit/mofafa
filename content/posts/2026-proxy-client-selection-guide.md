@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "client"
 ---
 
 拿到订阅地址后，下一步是选择客户端。客户端并不是速度越快越好，重点是系统兼容、订阅格式、更新维护和操作难度。

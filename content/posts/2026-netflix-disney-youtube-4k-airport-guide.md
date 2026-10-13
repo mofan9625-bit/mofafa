@@ -14,6 +14,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+tutorial_category: "troubleshoot"
 ---
 
 对大屏电视、Apple TV 和日常追剧用户来说，机场节点数量并不是最重要的。真正影响体验的是三件事：**平台能否识别到正确地区、出口 IP 是否被判定为代理、晚高峰能否持续跑满 4K 所需带宽**。

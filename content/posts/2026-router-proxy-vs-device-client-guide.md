@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "client"
 ---
 
 手机和电脑可以直接安装客户端，Apple TV、游戏机和部分智能电视却不方便导入订阅。家庭设备越来越多后，用户通常会在“每台设备装客户端”和“路由器统一代理”之间选择。

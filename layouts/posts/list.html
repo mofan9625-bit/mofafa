@@ -1,0 +1,223 @@
+{{ define "main" }}
+  {{ .Scratch.Set "scope" "list" }}
+  {{ $enableToc := .Params.showTableOfContents | default (site.Params.list.showTableOfContents | default false) }}
+  {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
+
+  {{/* Header */}}
+  <header class="mb-6 pt-2">
+    {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <div class="mt-4">
+      <p class="landing-rise mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-primary-600 dark:text-primary-400">
+        实操知识库 · 2026 稳定网络连接指南
+      </p>
+      <h1 class="landing-rise landing-rise-1 text-balance text-4xl sm:text-5xl font-black leading-[1.1] tracking-tighter text-neutral-900 dark:text-white">
+        使用教程与实操知识库
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-neutral-600 dark:text-neutral-300 max-w-4xl leading-relaxed">
+        精选主流代理客户端保姆级导入配置、网络断流与连接故障排查、以及机场挑选避坑防失联指南。
+      </p>
+    </div>
+  </header>
+
+  {{/* 提示横幅：引导单品测评专栏 */}}
+  <div class="mb-8 rounded-xl border border-primary-500/25 bg-primary-50/50 p-4 dark:border-primary-500/30 dark:bg-primary-950/25">
+    <div class="flex items-start gap-3">
+      <span class="text-xl">💡</span>
+      <div class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+        <strong>专栏导航提示</strong>：机场单品测评已全面独立收录至专属的
+        <a href="/reviews.html" class="font-bold text-primary-600 hover:underline dark:text-primary-400 inline-flex items-center gap-0.5">
+          【单品测评】专栏 &rarr;
+        </a>
+        当前页面专注收录客户端使用教程、全平台网络排错实操与挑选避坑预警。
+      </div>
+    </div>
+  </div>
+
+  {{/* 过滤排除测评文章，仅保留教程与知识库文章 */}}
+  {{ $tutorialPages := slice }}
+  {{ range .Pages }}
+    {{ $isRev := or .Params.is_review (hasSuffix .File.LogicalName "review-2026.md") (eq .Params.article_type "review") }}
+    {{ if not $isRev }}
+      {{ $tutorialPages = $tutorialPages | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{/* 分类筛选栏 (Tab Filter) */}}
+  <div class="tutorial-filter-bar mb-6">
+    <div
+      id="tutorial-filter-tabs"
+      class="inline-flex flex-wrap items-center gap-2 p-1.5 rounded-2xl border border-neutral-300/80 bg-neutral-100/70 backdrop-blur dark:border-neutral-700/80 dark:bg-neutral-900/70"
+      role="tablist"
+      aria-label="教程分类筛选">
+      <button
+        type="button"
+        role="tab"
+        id="tab-all"
+        aria-selected="true"
+        aria-controls="tutorial-cards-grid"
+        class="tutorial-filter-btn active flex items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-semibold transition-all duration-200 cursor-pointer"
+        data-filter="all">
+        <span>全部教程</span>
+        <span class="count-badge rounded-md bg-white/20 px-1.5 py-0.5 text-xs text-white dark:text-neutral-900 transition-colors">17</span>
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tab-client"
+        aria-selected="false"
+        aria-controls="tutorial-cards-grid"
+        class="tutorial-filter-btn flex items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 cursor-pointer text-neutral-700 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+        data-filter="client">
+        <span>客户端配置</span>
+        <span class="count-badge rounded-md bg-neutral-200/80 px-1.5 py-0.5 text-xs text-neutral-600 transition-colors dark:bg-neutral-800 dark:text-neutral-400">4</span>
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tab-troubleshoot"
+        aria-selected="false"
+        aria-controls="tutorial-cards-grid"
+        class="tutorial-filter-btn flex items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 cursor-pointer text-neutral-700 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+        data-filter="troubleshoot">
+        <span>排错与技巧</span>
+        <span class="count-badge rounded-md bg-neutral-200/80 px-1.5 py-0.5 text-xs text-neutral-600 transition-colors dark:bg-neutral-800 dark:text-neutral-400">7</span>
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tab-warning"
+        aria-selected="false"
+        aria-controls="tutorial-cards-grid"
+        class="tutorial-filter-btn flex items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 cursor-pointer text-neutral-700 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+        data-filter="warning">
+        <span>避坑预警</span>
+        <span class="count-badge rounded-md bg-neutral-200/80 px-1.5 py-0.5 text-xs text-neutral-600 transition-colors dark:bg-neutral-800 dark:text-neutral-400">6</span>
+      </button>
+    </div>
+  </div>
+
+  {{/* 教程文章网格：所有卡片直出渲染在 DOM 中以保障 SEO */}}
+  <section
+    id="tutorial-cards-grid"
+    class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {{ range $tutorialPages }}
+      {{ $cat := .Params.tutorial_category | default "guide" }}
+      <div
+        class="tutorial-card-wrapper transition-all duration-300 flex flex-col h-full"
+        data-category="{{ $cat }}">
+        {{ partial "article-link/card.html" . }}
+      </div>
+    {{ end }}
+  </section>
+
+  {{/* 空状态占位提示 */}}
+  <div
+    id="tutorial-filter-empty"
+    class="hidden py-16 text-center text-neutral-500 dark:text-neutral-400">
+    <p class="text-base font-medium">该分类下暂无文章</p>
+  </div>
+
+  <style>
+    .tutorial-filter-btn {
+      border: 1px solid transparent;
+      user-select: none;
+    }
+    .tutorial-filter-btn:not(.active):hover {
+      background-color: rgba(229, 231, 235, 0.6);
+      border-color: rgba(209, 213, 219, 0.8);
+    }
+    .dark .tutorial-filter-btn:not(.active):hover {
+      background-color: rgba(38, 38, 38, 0.8);
+      border-color: rgba(82, 82, 82, 0.8);
+    }
+    .tutorial-filter-btn.active {
+      background-color: #0284c7;
+      color: #ffffff !important;
+      font-weight: 600;
+      border-color: #38bdf8;
+      box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.35);
+    }
+    .tutorial-filter-btn.active .count-badge {
+      background-color: rgba(255, 255, 255, 0.25) !important;
+      color: #ffffff !important;
+    }
+    .dark .tutorial-filter-btn.active {
+      background-color: #0ea5e9;
+      color: #0b1120 !important;
+      border-color: #7dd3fc;
+      box-shadow: 0 0 20px -3px rgba(14, 165, 233, 0.45);
+    }
+    .dark .tutorial-filter-btn.active .count-badge {
+      background-color: rgba(11, 17, 32, 0.25) !important;
+      color: #0b1120 !important;
+    }
+    .tutorial-card-wrapper {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .tutorial-card-wrapper.is-hidden {
+      display: none !important;
+    }
+  </style>
+
+  <script>
+    (function () {
+      const container = document.getElementById('tutorial-filter-tabs');
+      if (!container) return;
+      const buttons = container.querySelectorAll('.tutorial-filter-btn');
+      const cards = document.querySelectorAll('.tutorial-card-wrapper');
+      const emptyNotice = document.getElementById('tutorial-filter-empty');
+
+      if (!buttons.length || !cards.length) return;
+
+      // 动态核准并更新各分类角标计数
+      const catCounts = { all: cards.length, client: 0, troubleshoot: 0, warning: 0 };
+      cards.forEach(function (card) {
+        const catStr = card.getAttribute('data-category') || '';
+        const cats = catStr.split(/\s+/);
+        cats.forEach(function (c) {
+          if (catCounts[c] !== undefined) {
+            catCounts[c]++;
+          }
+        });
+      });
+
+      buttons.forEach(function (btn) {
+        const f = btn.getAttribute('data-filter');
+        const badge = btn.querySelector('.count-badge');
+        if (badge && catCounts[f] !== undefined) {
+          badge.textContent = catCounts[f];
+        }
+
+        btn.addEventListener('click', function () {
+          buttons.forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const target = btn.getAttribute('data-filter');
+          let matched = 0;
+
+          cards.forEach(function (card) {
+            const cat = card.getAttribute('data-category') || '';
+            const match = (target === 'all') || (cat.split(/\s+/).indexOf(target) !== -1);
+            if (match) {
+              card.classList.remove('is-hidden');
+              matched++;
+            } else {
+              card.classList.add('is-hidden');
+            }
+          });
+
+          if (emptyNotice) {
+            emptyNotice.classList.toggle('hidden', matched > 0);
+          }
+        });
+      });
+    })();
+  </script>
+{{ end }}

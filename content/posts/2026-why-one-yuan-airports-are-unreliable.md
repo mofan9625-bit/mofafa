@@ -14,6 +14,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+tutorial_category: "warning guide"
 ---
 
 “一个月只要一元，还有上百 GB 流量”，看起来几乎没有试错成本。可真正使用后，常见体验却是：白天测速很漂亮，晚上网页转圈；节点列表有几十个，能稳定连接的只有两三个；工单迟迟不回，套餐还没到期，官网和订阅先失效了。

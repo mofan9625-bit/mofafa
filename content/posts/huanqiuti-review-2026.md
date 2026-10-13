@@ -14,6 +14,8 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+is_review: true
+article_type: "review"
 ---
 
 在刚接触代理客户端的小白用户中，经常会遇到这样令人抓狂的情形：**正看着视频或查阅资料，当前节点突然网络抖动卡死，必须手动打开客户端从几十个节点中一个个测速、切换**；或者遇到**新旧客户端协议不兼容，导入订阅后死活识别不出节点**。

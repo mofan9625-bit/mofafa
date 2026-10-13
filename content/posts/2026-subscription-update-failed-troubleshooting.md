@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "troubleshoot"
 ---
 
 机场节点突然全部消失，不一定是服务跑路，也可能只是订阅地址过期、客户端格式错误或当前网络无法访问订阅服务器。正确做法是根据错误类型逐步排查，而不是反复删除客户端和重新安装。

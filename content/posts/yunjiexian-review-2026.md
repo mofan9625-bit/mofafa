@@ -14,6 +14,8 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+is_review: true
+article_type: "review"
 ---
 
 对于刚刚接触科学上网的零基础新手而言，挑选机场最怕遇到的三大痛点莫过于：**后台界面复杂看不懂**、**客户端手动配置节点频繁报错**、以及**晚高峰刷网页转圈看视频卡成 PPT**。很多新手刚花钱买了订阅，面对一堆乱七八糟的节点参数和协议代码直接傻眼，稍不留神就会踩进“买完用不了、客服找不到”的深坑。

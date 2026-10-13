@@ -15,6 +15,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+tutorial_category: "client"
 ---
 
 Clash Verge Rev 是目前较常见的桌面端网络代理管理客户端之一，采用 Mihomo 内核，支持 Windows、macOS 和 Linux。它的主要作用，是读取一份符合 Clash/Mihomo 格式的配置文件，根据配置中的规则，把不同网站或应用的网络请求交给直连、代理节点或其他策略组处理。

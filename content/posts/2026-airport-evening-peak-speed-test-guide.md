@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "troubleshoot"
 ---
 
 很多机场在白天测速很快，晚上八点到十一点却频繁转圈。原因是白天的空闲带宽不能代表晚高峰表现，单次测速的最高速度也不能说明长时间使用是否稳定。

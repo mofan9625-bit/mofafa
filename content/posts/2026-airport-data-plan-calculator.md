@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "warning guide"
 ---
 
 机场套餐从每月 60GB 到 600GB，价格差距很大。流量买少了，月底不够用；买多了，剩余流量清零，又造成浪费。

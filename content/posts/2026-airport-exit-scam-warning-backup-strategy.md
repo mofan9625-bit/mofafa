@@ -14,6 +14,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+tutorial_category: "warning guide"
 ---
 
 机场昨天还能正常使用，今天订阅突然更新失败；官方网站打不开，客服群被禁言，工单几天无人回复——这是很多用户最担心的“机场跑路或失联”。比断网更麻烦的是，用户往往已经一次性购买了一年、两年甚至三年的套餐，余额、订阅和售后入口同时消失。

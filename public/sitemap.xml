@@ -51,12 +51,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mofaclashjichang.com/posts/</loc>
-    <lastmod>2026-10-11T15:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://mofaclashjichang.com/tags/%E5%A4%A7%E4%BD%AC%E4%BA%91/</loc>
     <lastmod>2026-10-11T15:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -109,6 +103,12 @@
     <lastmod>2026-10-11T15:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mofaclashjichang.com/posts/</loc>
+    <lastmod>2026-10-11T15:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mofaclashjichang.com/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE/</loc>

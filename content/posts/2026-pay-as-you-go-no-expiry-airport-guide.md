@@ -14,6 +14,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+tutorial_category: "warning guide"
 ---
 
 不是所有用户都需要每月 300GB、600GB 的订阅套餐。很多人平时只偶尔查资料、收邮件、登录海外后台，或者只想准备一条主力线路失联时能够立即使用的备用节点。每个月固定支付几十元，流量月底清零，实际可能只用了几 GB，长期算下来并不划算。

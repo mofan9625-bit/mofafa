@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "troubleshoot"
 ---
 
 代理客户端显示已经连接，IP 查询也显示目标国家，但网站仍然展示本地内容，或者不同检测页面给出不同地区。原因可能不是节点失效，而是 DNS、IPv6、WebRTC、Cookie 和账号历史信号不一致。

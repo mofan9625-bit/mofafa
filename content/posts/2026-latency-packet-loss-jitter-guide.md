@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "troubleshoot"
 ---
 
 很多用户选择节点时只看延迟：香港 30ms 就认为一定比日本 60ms 好，美国 180ms 就直接放弃。但真实使用中，经常出现延迟很低却网页卡顿、视频转圈，延迟稍高的节点反而更稳定。

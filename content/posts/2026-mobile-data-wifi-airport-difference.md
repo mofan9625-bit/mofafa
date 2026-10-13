@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "troubleshoot"
 ---
 
 同一个订阅、同一个节点，在手机流量下可以连接，切到家庭 Wi-Fi 就超时；或者电脑宽带正常，手机移动数据却无法更新订阅。这类问题通常不是账号故障，而是不同网络的路由、DNS、IPv6 和端口策略存在差异。

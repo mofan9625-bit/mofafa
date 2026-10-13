@@ -14,6 +14,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+tutorial_category: "troubleshoot"
 ---
 
 打开 ChatGPT 或 Claude 时，突然出现 **Access Denied、Error 1020、Sorry, you have been blocked、异常登录**，甚至账号被暂停，是近两年越来越常见的问题。很多用户第一反应是“节点失效”，不断更换国家和线路，结果验证码越来越多，登录状态反而更加异常。

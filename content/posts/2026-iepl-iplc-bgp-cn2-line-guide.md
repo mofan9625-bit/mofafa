@@ -13,6 +13,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.8
+tutorial_category: "client"
 ---
 
 选择机场时，经常会看到 IEPL、IPLC、BGP、CN2、直连、中转、专线等名词。很多套餐把线路名称放在最显眼的位置，用户却很难判断它对实际速度、延迟和稳定性究竟意味着什么。

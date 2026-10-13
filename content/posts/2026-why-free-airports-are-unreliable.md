@@ -14,6 +14,7 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
+tutorial_category: "warning guide"
 ---
 
 临时要开一个网页，免费节点却一直转圈；好不容易连接成功，视频只能低清播放；刚登录常用账号，又收到异地验证提醒。很多人第一次接触机场服务时，会先搜索免费机场，认为“只是偶尔用一下，没有必要付费”。真正让人难受的却不是速度慢，而是它总在最需要的时候失效。
