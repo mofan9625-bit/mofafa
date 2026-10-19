@@ -1247,22 +1247,12 @@ targetLocations.forEach(loc => {
 
 // 2. 更新 sitemap.xml
 console.log('\n=== 第三步 (1)：更新 sitemap.xml ===');
-const sitemapPath = path.join(ROOT_DIR, 'public', 'sitemap.xml');
-if (fs.existsSync(sitemapPath)) {
-  let sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
-  if (!sitemapContent.includes(FULL_SITE_URL)) {
-    const newEntry = `  <url>
-    <loc>${FULL_SITE_URL}</loc>
-    <lastmod>2026-10-18T15:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>\n`;
-    sitemapContent = sitemapContent.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n' + newEntry);
-    fs.writeFileSync(sitemapPath, sitemapContent, 'utf-8');
-    console.log('✓ 成功将新文章加入 public/sitemap.xml');
-  } else {
-    console.log('- public/sitemap.xml 已包含该文章链接');
-  }
+try {
+  const { buildSitemap } = require('./generate_sitemap.cjs');
+  buildSitemap();
+  console.log('✓ 成功通过 generate_sitemap.cjs 更新并验证全站 sitemap.xml');
+} catch (err) {
+  console.warn('! 更新 sitemap.xml 异常:', err.message);
 }
 
 // 3. 反向注入回链至 6 篇单品测评

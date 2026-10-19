@@ -41,20 +41,12 @@ articleFiles.forEach(file => {
 });
 
 // 更新 sitemap.xml
-const sitemapPath = path.join(ROOT_DIR, 'public', 'sitemap.xml');
-if (fs.existsSync(sitemapPath)) {
-  let sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
-  if (!sitemapContent.includes(FULL_SITE_URL)) {
-    const newEntry = `  <url>
-    <loc>${FULL_SITE_URL}</loc>
-    <lastmod>2026-10-18T15:20:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>\n`;
-    sitemapContent = sitemapContent.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n' + newEntry);
-    fs.writeFileSync(sitemapPath, sitemapContent, 'utf-8');
-    console.log(`✓ 成功将规范URL添加至 sitemap.xml: ${FULL_SITE_URL}`);
-  }
+try {
+  const { buildSitemap } = require('./generate_sitemap.cjs');
+  buildSitemap();
+  console.log(`✓ 成功通过 generate_sitemap.cjs 更新并验证全站 sitemap.xml: ${FULL_SITE_URL}`);
+} catch (err) {
+  console.warn('! 更新 sitemap.xml 异常:', err.message);
 }
 
 console.log('\n=== 第二步：在单品测评页挂载置顶横评卡片 ===');

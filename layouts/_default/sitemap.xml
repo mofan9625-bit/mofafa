@@ -1,0 +1,27 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- range .Data.Pages }}
+{{- if and (not .Sitemap.Disable) (not (in .Site.Params.sitemap.excludedKinds .Kind)) }}
+{{- if and (.Param "xml" | default true) (or (not .Params.externalUrl) (and (.Params.externalUrl) (and (not (hasPrefix .Params.externalUrl "http://")) (not (hasPrefix .Params.externalUrl "https://"))))) (not .Params.excludeFromSearch) }}
+{{- if .Permalink }}
+{{- $link := .Permalink }}
+{{- if .Params.externalUrl }}
+{{- $link = printf "%s%s" .Site.BaseURL (substr .Params.externalUrl 1) }}
+{{- end }}
+  <url>
+    <loc>{{ $link }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+    {{- end }}
+    {{- with .Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>
+    {{- end }}
+    {{- if ge .Sitemap.Priority 0.0 }}
+    <priority>{{ printf "%.1f" .Sitemap.Priority }}</priority>
+    {{- end }}
+  </url>
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+</urlset>

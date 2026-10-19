@@ -2,7 +2,8 @@
   "name": "mofafa-blog",
   "private": true,
   "scripts": {
-    "build": "hugo",
+    "build": "hugo && node scripts/generate_sitemap.cjs",
+    "sitemap": "node scripts/generate_sitemap.cjs",
     "postbuild": "node scripts/submit-indexnow.mjs public/sitemap.xml",
     "indexnow": "node scripts/submit-indexnow.mjs public/sitemap.xml"
   },
