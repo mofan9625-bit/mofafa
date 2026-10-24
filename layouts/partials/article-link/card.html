@@ -5,16 +5,21 @@
 */}}
 {{ $disableImageOptimization := site.Store.Get "disableImageOptimization" }}
 
-{{ $page := .Page }}
+{{ $page := . }}
+{{ if reflect.IsMap . }}
+  {{ with .Page }}
+    {{ $page = . }}
+  {{ end }}
+{{ end }}
 {{ $featured := "" }}
 {{ $featuredURL := "" }}
 {{ $thumbnailAspectRatio := site.Params.thumbnailAspectRatio | default "1.5" }}
 {{ $thumbnailAspectRatio = replaceRE "[^0-9.]" "" $thumbnailAspectRatio }}
 {{ if eq $thumbnailAspectRatio "" }}{{ $thumbnailAspectRatio = "1.5" }}{{ end }}
 {{ $featureImageHover := site.Params.list.featureImageHover | default false }}
-{{ if isset .Params "featureImageHover" }}{{ $featureImageHover = .Params.featureImageHover }}{{ end }}
-{{ $featureImagePosition := .Params.imagePositionFeature | default site.Params.imagePositionFeature | default site.Params.imagePosition }}
-{{ if not .Params.hideFeatureImage }}
+{{ if isset $page.Params "featureImageHover" }}{{ $featureImageHover = $page.Params.featureImageHover }}{{ end }}
+{{ $featureImagePosition := $page.Params.imagePositionFeature | default site.Params.imagePositionFeature | default site.Params.imagePosition }}
+{{ if not $page.Params.hideFeatureImage }}
   {{/* frontmatter */}}
   {{ with $page }}
     {{ $p := . }}
@@ -26,9 +31,13 @@
           {{ $featured = resources.GetRemote . }}
         {{ end }}
       {{ else }}
-        {{ $featured = $p.Resources.Get . }}
+        {{ $cleanPath := strings.TrimPrefix "/" . }}
+        {{ $featured = $p.Resources.Get $cleanPath }}
         {{ if not $featured }}
-          {{ $featured = resources.Get . }}
+          {{ $featured = resources.Get $cleanPath }}
+        {{ end }}
+        {{ if not $featured }}
+          {{ $featuredURL = . | relURL }}
         {{ end }}
       {{ end }}
     {{ end }}

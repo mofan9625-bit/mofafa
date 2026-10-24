@@ -8,7 +8,7 @@ summary: "刚配好客户端却发现微信发不出图、淘宝打不开、视�
 categories: ["使用教程"]
 tags: ["分流规则", "节点分组", "新手教程", "Clash Verge", "网络排错"]
 tutorial_category: "troubleshoot"
-featureimage: "/images/covers/cover-15.jpg"
+featureimage: "images/covers/cover-15.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

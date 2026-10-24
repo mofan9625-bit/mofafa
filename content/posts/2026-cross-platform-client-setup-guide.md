@@ -8,7 +8,7 @@ summary: "别再到处找过时的客户端了！本篇保姆级指南梳理 Win
 categories: ["使用教程"]
 tags: ["客户端配置", "新手入门", "Clash Verge", "Sing-box", "小火箭"]
 tutorial_category: "client"
-featureimage: "/images/covers/cover-14.jpg"
+featureimage: "images/covers/cover-14.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

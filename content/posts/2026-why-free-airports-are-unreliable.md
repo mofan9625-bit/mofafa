@@ -7,6 +7,8 @@ description: "免费机场为什么经常连不上、速度慢、订阅失效？
 summary: "免费线路看似省钱，却常把成本转化为等待时间、账号风险和不可预测的中断。本文帮你判断哪些场景不能依赖免费服务。"
 categories: ["机场知识", "安全指南"]
 tags: ["免费机场", "免费节点", "机场避坑", "节点稳定性", "隐私安全", "机场选择"]
+tutorial_category: "warning"
+featureimage: "images/covers/cover-8.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true
@@ -14,7 +16,6 @@ showWordCount: true
 sitemap:
   changefreq: "monthly"
   priority: 0.9
-tutorial_category: "warning guide"
 ---
 
 临时要开一个网页，免费节点却一直转圈；好不容易连接成功，视频只能低清播放；刚登录常用账号，又收到异地验证提醒。很多人第一次接触机场服务时，会先搜索免费机场，认为“只是偶尔用一下，没有必要付费”。真正让人难受的却不是速度慢，而是它总在最需要的时候失效。

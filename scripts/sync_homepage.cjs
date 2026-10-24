@@ -182,6 +182,25 @@ const tutorialCards = [
     ]
   },
   {
+    title: '2026 新手小白选购指南：六大主流机场 Clash / Sing-box / 小火箭一键导入与防断流避坑横评',
+    url: '/posts/2026-clash-beginner-airport-selection-guide/',
+    cover: '/images/covers/cover-1.jpg',
+    date: '2026-10-18T15:00:00+08:00',
+    words: '2897 字',
+    readingTime: '6 分钟',
+    viewId: 'views_posts\\2026-clash-beginner-airport-selection-guide.md',
+    categories: [
+      { name: '机场测评', url: '/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/' },
+      { name: '使用教程', url: '/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/' }
+    ],
+    tags: [
+      { name: '新手教程', url: '/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/' },
+      { name: 'Clash配置教程', url: '/tags/clash%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/' },
+      { name: '小火箭配置', url: '/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE/' },
+      { name: '2026机场推荐', url: '/tags/2026%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/' }
+    ]
+  },
+  {
     title: '一元机场为什么不能用？低价套餐背后的超售、限速与失联成本',
     url: '/posts/2026-why-one-yuan-airports-are-unreliable/',
     cover: '/images/covers/cover-7.jpg',
@@ -457,22 +476,26 @@ function generateTutorialCardHtml(t) {
         </article>`;
 }
 
-// 汇总 18 篇文章并按日期排序与排版
-const allArticles = [
+// 汇总站内所有文章并严格按日期降序排序（确保最新文章排在最前面）
+const sortedArticles = [
   ...reviewsData,
   ...tutorialCards
-];
+].sort((a, b) => new Date(b.date) - new Date(a.date));
 
-console.log('>>> [Step 2] 汇总站内文章发布时间与排版顺序:');
-allArticles.forEach((art, index) => {
+console.log('>>> [Step 2] 汇总站内文章发布时间与排版顺序（降序最新优先）:');
+sortedArticles.forEach((art, index) => {
   console.log(`[${index + 1}] [${art.date.split('T')[0]}] ${art.title} (${art.url})`);
 });
 
 // 构建首页全新的 grid section HTML
 const fullGridHtml = `<section class="w-full grid gap-6 sm:grid-cols-2 md:grid-cols-3 mt-8">
-${reviewsData.map(r => generateReviewCardHtml(r)).join('\n\n')}
-
-${tutorialCards.map(t => generateTutorialCardHtml(t)).join('\n\n')}
+${sortedArticles.map(art => {
+  if (art.category === '单品测评') {
+    return generateReviewCardHtml(art);
+  } else {
+    return generateTutorialCardHtml(art);
+  }
+}).join('\n\n')}
       </section>`;
 
 // =========================================================================

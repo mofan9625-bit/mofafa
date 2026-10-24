@@ -7,6 +7,8 @@ description: "专门针对科学上网新手小白与多设备用户，对云界
 summary: "2026 科学上网新手选购必读支柱指南！全面对比六大主流机场在 Clash Verge、Sing-box、小火箭上的全平台一键导入体验、晚高峰防断流能力与客服响应时效，提供场景化选购决策树与防断流避坑手册。"
 categories: ["机场测评", "使用教程"]
 tags: ["机场测评", "新手教程", "Clash配置教程", "小火箭配置", "2026机场推荐"]
+tutorial_category: "client"
+featureimage: "images/covers/cover-1.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true
