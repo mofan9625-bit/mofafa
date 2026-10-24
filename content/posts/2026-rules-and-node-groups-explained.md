@@ -1,12 +1,14 @@
 ---
 title: "连上后国内网站打不开？微信转圈？Clash & Sing-box 节点分组与分流规则“白话自救”手册"
-date: 2026-10-24T15:25:00+08:00
-lastmod: 2026-10-24T15:25:00+08:00
+date: 2026-10-23T10:00:00+08:00
+lastmod: 2026-10-24T10:00:00+08:00
 draft: false
 description: "专为新手解答：为什么一开代理国内网页就变慢？自动选择、故障转移、全局和规则模式到底怎么选？用生活化的大白话拆解 Clash 与 Sing-box 节点分组与分流机制，解决日常卡顿与断流烦恼。"
 summary: "刚配好客户端却发现微信发不出图、淘宝打不开、视频看着看着突然卡住？这篇指南用最通俗的大白话讲清分流规则与节点分组，教你调出最平稳省心的日常上网配置。"
 categories: ["使用教程"]
 tags: ["分流规则", "节点分组", "新手教程", "Clash Verge", "网络排错"]
+tutorial_category: "troubleshoot"
+featureimage: "/images/covers/cover-15.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

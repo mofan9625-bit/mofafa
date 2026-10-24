@@ -146,6 +146,42 @@ ${tagsHtml}
 // 教程文章列表与元数据（来自原 index.html，更新 cover-7 ~ cover-18 避免重复）
 const tutorialCards = [
   {
+    title: '连上后国内网站打不开？微信转圈？Clash & Sing-box 节点分组与分流规则“白话自救”手册',
+    url: '/posts/2026-rules-and-node-groups-explained/',
+    cover: '/images/covers/cover-15.jpg',
+    date: '2026-10-23T10:00:00+08:00',
+    words: '3100 字',
+    readingTime: '7 分钟',
+    viewId: 'views_posts\\2026-rules-and-node-groups-explained.md',
+    categories: [
+      { name: '使用教程', url: '/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/' }
+    ],
+    tags: [
+      { name: '分流规则', url: '/tags/%E5%88%86%E6%B5%81%E8%A7%84%E5%88%99/' },
+      { name: '节点分组', url: '/tags/%E8%8A%82%E7%82%B9%E5%88%86%E7%BB%84/' },
+      { name: '新手教程', url: '/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/' },
+      { name: '网络排错', url: '/tags/%E7%BD%91%E7%BB%9C%E6%8E%92%E9%44%90/' }
+    ]
+  },
+  {
+    title: '2026 新手跨平台客户端保姆级选型与一键导入指南：Win / Mac / iOS / 安卓少走弯路实操手册',
+    url: '/posts/2026-cross-platform-client-setup-guide/',
+    cover: '/images/covers/cover-14.jpg',
+    date: '2026-10-22T10:00:00+08:00',
+    words: '3200 字',
+    readingTime: '8 分钟',
+    viewId: 'views_posts\\2026-cross-platform-client-setup-guide.md',
+    categories: [
+      { name: '使用教程', url: '/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/' }
+    ],
+    tags: [
+      { name: '客户端配置', url: '/tags/%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/' },
+      { name: '新手入门', url: '/tags/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/' },
+      { name: 'Clash Verge', url: '/tags/clash-verge/' },
+      { name: '小火箭', url: '/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD/' }
+    ]
+  },
+  {
     title: '一元机场为什么不能用？低价套餐背后的超售、限速与失联成本',
     url: '/posts/2026-why-one-yuan-airports-are-unreliable/',
     cover: '/images/covers/cover-7.jpg',

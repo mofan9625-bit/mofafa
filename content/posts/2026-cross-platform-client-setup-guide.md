@@ -1,12 +1,14 @@
 ---
 title: "2026 新手跨平台客户端保姆级选型与一键导入指南：Win / Mac / iOS / 安卓少走弯路实操手册"
-date: 2026-10-24T15:20:00+08:00
-lastmod: 2026-10-24T15:20:00+08:00
+date: 2026-10-22T10:00:00+08:00
+lastmod: 2026-10-24T10:00:00+08:00
 draft: false
 description: "专为初次接触科学上网的新手打造的跨平台客户端指南。不讲复杂网络协议，只讲人话实操：Windows、Mac、iPhone、Android 各系统推荐装什么客户端、怎么实现一键导入、新手常见报错与避坑指南。"
 summary: "别再到处找过时的客户端了！本篇保姆级指南梳理 Windows、Mac、iOS、Android 四大平台目前最省心、零门槛的客户端选型方案，手把手演示一键导入步骤与避坑细节。"
 categories: ["使用教程"]
 tags: ["客户端配置", "新手入门", "Clash Verge", "Sing-box", "小火箭"]
+tutorial_category: "client"
+featureimage: "/images/covers/cover-14.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true
