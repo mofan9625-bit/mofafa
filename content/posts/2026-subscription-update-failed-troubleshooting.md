@@ -7,6 +7,7 @@ description: "机场订阅更新失败排查教程，解决403、404、请求超
 summary: "从订阅地址、网络、客户端格式到服务后台逐步排查更新失败。"
 categories: ["使用教程"]
 tags: ["订阅更新失败", "403", "404", "Clash订阅", "无节点", "故障排查"]
+featureimage: "images/covers/cover-15.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

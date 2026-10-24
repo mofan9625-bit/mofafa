@@ -7,6 +7,7 @@ description: "2026按量付费机场、不限时机场推荐与备用机场节�
 summary: "不想每月订阅？本文对比云界线、大佬云、环球梯的一次性流量包，并讲清有效期、单位流量成本和备用节点测试方法。"
 categories: ["机场测评", "使用教程"]
 tags: ["按量付费机场", "不限时机场推荐", "备用机场节点", "一次性流量包", "轻量机场", "机场推荐"]
+featureimage: "images/covers/cover-11.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

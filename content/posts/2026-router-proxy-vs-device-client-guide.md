@@ -7,6 +7,7 @@ description: "家庭网络代理方案对比，分析路由器代理、旁路由
 summary: "家庭多设备应该在路由器统一配置，还是每台设备单独安装客户端？"
 categories: ["使用教程"]
 tags: ["路由器代理", "旁路由", "Apple TV", "智能电视", "家庭网络"]
+featureimage: "images/covers/cover-13.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

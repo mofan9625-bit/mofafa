@@ -7,6 +7,7 @@ description: "2026代理客户端选择指南，对比Clash Verge Rev、Shadowro
 summary: "根据系统、订阅格式和使用难度选择合适客户端。"
 categories: ["使用教程"]
 tags: ["代理客户端", "Clash Verge Rev", "Shadowrocket", "v2rayN", "Karing", "v2rayNG"]
+featureimage: "images/covers/cover-12.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

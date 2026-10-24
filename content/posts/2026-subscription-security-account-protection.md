@@ -7,6 +7,7 @@ description: "机场订阅地址安全指南，讲解订阅泄露风险、重置
 summary: "订阅地址相当于访问凭据，泄露后应立即重置并检查设备。"
 categories: ["安全指南"]
 tags: ["订阅泄露", "账号安全", "重置订阅", "异常流量", "多设备管理"]
+featureimage: "images/covers/cover-14.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

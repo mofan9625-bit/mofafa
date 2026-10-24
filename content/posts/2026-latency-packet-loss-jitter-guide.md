@@ -7,6 +7,7 @@ description: "机场节点延迟、丢包、抖动和带宽科普，解释为什
 summary: "延迟只是一个指标，丢包、抖动和持续带宽决定真实体验。"
 categories: ["机场知识"]
 tags: ["延迟", "丢包", "抖动", "带宽", "节点稳定性", "Ping"]
+featureimage: "images/covers/cover-8.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

@@ -7,6 +7,7 @@ description: "机场晚高峰测速教程，讲解延迟、下载速度、丢包
 summary: "一套可重复的晚高峰测试流程，帮助判断节点是否真的稳定。"
 categories: ["使用教程"]
 tags: ["机场测速", "晚高峰", "延迟测试", "丢包", "节点测速"]
+featureimage: "images/covers/cover-3.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

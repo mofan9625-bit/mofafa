@@ -7,6 +7,7 @@ description: "2026 稳定机场推荐：大佬云机场新手深度配置与选�
 summary: "多设备同时在线与完善后台支持的典范！本文测评大佬云后台系统对小白的友好程度、工单客服响应时效、手机电脑多端节点稳定性及流媒体解锁实况。"
 categories: ["机场测评", "使用教程"]
 tags: ["2026机场推荐", "Clash配置教程", "新手翻墙指南", "大佬云", "Clash一键导入教程", "新手翻墙机场推荐", "多设备机场推荐", "IPLC专线机场"]
+featureimage: "images/covers/cover-16.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

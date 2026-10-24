@@ -50,13 +50,14 @@
     {{ end }}
   {{ end }}
 
-  {{/* fallback to default */}}
+  {{/* fallback to dynamic cover image instead of maze svg */}}
   {{ if not (or $featured $featuredURL) }}
-    {{ $default := site.Store.Get "defaultFeaturedImage" }}
-    {{ if $default.url }}
-      {{ $featuredURL = $default.url }}
-    {{ else if $default.obj }}
-      {{ $featured = $default.obj }}
+    {{ $seed := len $page.RelPermalink }}
+    {{ $coverIndex := add (mod (add $seed 3) 18) 1 }}
+    {{ $coverPath := printf "images/covers/cover-%d.jpg" $coverIndex }}
+    {{ $featured = resources.Get $coverPath }}
+    {{ if not $featured }}
+      {{ $featuredURL = printf "/images/covers/cover-%d.jpg" $coverIndex }}
     {{ end }}
   {{ end }}
 

@@ -7,6 +7,7 @@ description: "2026机场线路科普，讲清IEPL、IPLC、BGP、CN2、普通公
 summary: "线路名称很多，但入口、跨境传输和出口才是实际体验的关键。"
 categories: ["机场知识"]
 tags: ["IEPL", "IPLC", "BGP", "CN2", "专线机场", "线路选择"]
+featureimage: "images/covers/cover-7.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

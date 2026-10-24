@@ -7,6 +7,7 @@ description: "解决同一机场节点在手机流量可用、家庭Wi-Fi不可�
 summary: "通过交叉测试快速判断故障来自机场节点、家庭宽带还是手机网络。"
 categories: ["使用教程"]
 tags: ["手机流量", "Wi-Fi", "宽带", "节点无法连接", "网络排查"]
+featureimage: "images/covers/cover-9.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

@@ -7,6 +7,7 @@ description: "2026 稳定机场推荐：云界线机场新手保姆级使用评�
 summary: "零门槛开箱即用的新手主力机场！本文详解云界线在 Clash Verge、Sing-box、小火箭等多客户端的一键导入步骤、晚高峰网页与视频流畅度实测及常见连接排坑方案。"
 categories: ["机场测评", "使用教程"]
 tags: ["2026机场推荐", "Clash配置教程", "新手翻墙指南", "云界线", "Clash一键导入教程", "新手翻墙机场推荐", "Sing-box教程", "小火箭配置"]
+featureimage: "images/covers/cover-18.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

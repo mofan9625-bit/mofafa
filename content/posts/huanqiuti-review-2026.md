@@ -7,6 +7,7 @@ description: "2026 稳定机场推荐：环球梯机场怎么样？新手小白 
 summary: "网络波动自动切线无感过渡！本文详解环球梯在 Clash 与小火箭中的极简一键导入、自适应协议兼容性、策略组自动切线防断流配置与常见新手误区自查。"
 categories: ["机场测评", "使用教程"]
 tags: ["2026机场推荐", "Clash配置教程", "新手翻墙指南", "环球梯", "Clash一键导入教程", "新手翻墙机场推荐", "节点防断流", "小火箭配置"]
+featureimage: "images/covers/cover-17.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

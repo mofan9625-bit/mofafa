@@ -7,6 +7,7 @@ description: "ChatGPT 1020报错、Claude 账号被封 IP 解封怎么办？本�
 summary: "从 Cloudflare 1020、IP 风控到账号申诉，系统讲清机房 IP、广播 IP、原生住宅 IP和专线出口的区别。"
 categories: ["机场测评", "使用教程"]
 tags: ["ChatGPT 1020报错", "Claude账号被封", "原生住宅IP机场", "IP风控", "专线机场", "Cloudflare"]
+featureimage: "images/covers/cover-5.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true

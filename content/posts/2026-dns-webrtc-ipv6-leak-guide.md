@@ -7,6 +7,7 @@ description: "排查代理连接后的DNS泄漏、WebRTC本地地址暴露、IPv
 summary: "连接节点后地区仍不一致，问题可能来自DNS、IPv6或浏览器会话。"
 categories: ["使用教程"]
 tags: ["DNS泄漏", "WebRTC", "IPv6", "IP泄漏", "地区识别"]
+featureimage: "images/covers/cover-6.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

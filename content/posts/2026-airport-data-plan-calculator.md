@@ -7,6 +7,7 @@ description: "机场流量套餐选择指南，估算网页、AI、音乐、1080
 summary: "根据真实使用场景估算每月流量，再选择60GB、120GB、300GB或600GB套餐。"
 categories: ["机场知识"]
 tags: ["机场流量", "套餐选择", "60GB", "300GB", "流量估算", "4K视频"]
+featureimage: "images/covers/cover-2.jpg"
 showTableOfContents: true
 showReadingTime: true
 showWordCount: true

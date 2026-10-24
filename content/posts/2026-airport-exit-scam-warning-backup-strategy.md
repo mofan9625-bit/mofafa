@@ -7,6 +7,7 @@ description: "2026机场跑路前兆、备用防失联节点和机场挑选避�
 summary: "从价格、客服、节点、公告和续费策略识别机场跑路前兆，并用不同运营主体的一主一备方案降低突然断网风险。"
 categories: ["机场测评", "使用教程"]
 tags: ["机场跑路前兆", "备用防失联节点", "机场挑选避坑", "主备双持", "机场推荐", "风险管理"]
+featureimage: "images/covers/cover-4.jpg"
 showHero: true
 showTableOfContents: true
 showReadingTime: true
