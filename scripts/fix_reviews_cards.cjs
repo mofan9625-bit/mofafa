@@ -118,7 +118,7 @@ const cardsSectionHtml = `      <section class="w-full grid gap-6 sm:grid-cols-2
             <a href="/posts/yunjiexian-review-2026/" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
-            <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <a href="/go.html?id=yunjiexian" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
               官网直达 ↗
             </a>
           </div>
@@ -169,7 +169,7 @@ const cardsSectionHtml = `      <section class="w-full grid gap-6 sm:grid-cols-2
             <a href="/posts/dalaoyun-review-2026/" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
-            <a href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <a href="/go.html?id=dalaoyun" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
               官网直达 ↗
             </a>
           </div>
@@ -220,7 +220,7 @@ const cardsSectionHtml = `      <section class="w-full grid gap-6 sm:grid-cols-2
             <a href="/posts/huanqiuti-review-2026/" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
-            <a href="https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <a href="/go.html?id=huanqiuti" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
               官网直达 ↗
             </a>
           </div>
@@ -271,7 +271,7 @@ const cardsSectionHtml = `      <section class="w-full grid gap-6 sm:grid-cols-2
             <a href="/article-liulianyun-2026-review.html" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
-            <a href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <a href="/go.html?id=liulianyun" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
               官网直达 ↗
             </a>
           </div>
@@ -322,7 +322,7 @@ const cardsSectionHtml = `      <section class="w-full grid gap-6 sm:grid-cols-2
             <a href="/article-shenxing-2026-review.html" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
-            <a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <a href="/go.html?id=shenxing" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
               官网直达 ↗
             </a>
           </div>
@@ -373,7 +373,7 @@ const cardsSectionHtml = `      <section class="w-full grid gap-6 sm:grid-cols-2
             <a href="/article-shandianshu-2026-review.html" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
-            <a href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <a href="/go.html?id=shandianshu" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
               官网直达 ↗
             </a>
           </div>

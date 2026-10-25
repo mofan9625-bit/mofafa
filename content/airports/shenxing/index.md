@@ -51,6 +51,6 @@ sitemap:
 
 目前资料中没有可核验的节点测速、晚高峰记录和不同运营商对比，因此本文只分析套餐配置，不对实际速度和长期稳定性作结论。后续获得可核验测速资料后，可再补充延迟、丢包、平均速度和异常节点分析。
 
-<a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="sponsored noopener noreferrer">前往神行加速官网查看实时套餐 ↗</a>
+<a href="/go.html?id=shenxing" target="_blank" rel="nofollow sponsored noopener noreferrer">前往神行加速官网查看实时套餐 ↗</a>
 
 [← 返回机场推荐](/airports/)

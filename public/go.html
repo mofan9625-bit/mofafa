@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安全跳转中 - 魔法Clash机场知识库</title>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.25);
+      --btn-bg: #2563eb;
+      --btn-hover: #1d4ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 440px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 18px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 30px var(--accent-glow);
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .spinner-wrap {
+      position: relative;
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 24px;
+    }
+
+    .spinner {
+      width: 100%;
+      height: 100%;
+      border: 3px solid rgba(56, 189, 248, 0.15);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .spinner-icon {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-sub);
+      margin-bottom: 24px;
+    }
+
+    .target-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 20px;
+    }
+
+    .btn-action {
+      display: inline-block;
+      width: 100%;
+      background: var(--btn-bg);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 10px;
+      transition: background 0.2s, transform 0.1s;
+      margin-bottom: 14px;
+    }
+
+    .btn-action:hover {
+      background: var(--btn-hover);
+      transform: translateY(-1px);
+    }
+
+    .home-link {
+      display: inline-block;
+      color: var(--text-sub);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .home-link:hover {
+      color: var(--text-main);
+    }
+
+    .error-box {
+      display: none;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      color: #fca5a5;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="spinner-wrap">
+      <div class="spinner"></div>
+      <div class="spinner-icon">🚀</div>
+    </div>
+    <div id="target-badge" class="target-badge">正在安全验证...</div>
+    <h1 id="title">正在安全前往官方入口</h1>
+    <p id="desc" class="desc">请稍候，正在为您建立受加密保护的官方跳转通道...</p>
+    <div id="error-box" class="error-box"></div>
+    <a id="btn-manual" class="btn-action" href="#" rel="nofollow sponsored noopener noreferrer">直接前往官方页面 ↗</a>
+    <div>
+      <a class="home-link" href="/">← 返回魔法Clash机场知识库</a>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // 官方推广通道映射配置
+      const REDIRECT_MAP = {
+        'yunjiexian': {
+          name: '云界线 (Yunjiexian)',
+          url: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L'
+        },
+        'dalaoyun': {
+          name: '大佬云 (Dalaoyun)',
+          url: 'https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V'
+        },
+        'huanqiuti': {
+          name: '环球梯 (Huanqiuti)',
+          url: 'https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU'
+        },
+        'liulianyun': {
+          name: '榴莲云 (Liulianyun)',
+          url: 'https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR'
+        },
+        'shenxing': {
+          name: '神行加速 (Shenxing)',
+          url: 'https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK'
+        },
+        'shandianshu': {
+          name: '闪电鼠 (Shandianshu)',
+          url: 'https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg'
+        }
+      };
+
+      // 解析目标 ID: 优先读取 ?id=xxx，其次解析 hash 或路径
+      let targetId = '';
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        targetId = (urlParams.get('id') || '').trim().toLowerCase();
+        
+        if (!targetId && window.location.hash) {
+          targetId = window.location.hash.replace('#', '').trim().toLowerCase();
+        }
+
+        if (!targetId) {
+          // 尝试从路径中匹配 /go/xxx
+          const pathParts = window.location.pathname.split('/').filter(Boolean);
+          const goIdx = pathParts.indexOf('go');
+          if (goIdx !== -1 && pathParts[goIdx + 1]) {
+            targetId = pathParts[goIdx + 1].toLowerCase().replace('.html', '');
+          }
+        }
+      } catch (e) {
+        console.error('参数解析失败', e);
+      }
+
+      const badgeEl = document.getElementById('target-badge');
+      const titleEl = document.getElementById('title');
+      const descEl = document.getElementById('desc');
+      const btnManual = document.getElementById('btn-manual');
+      const errorBox = document.getElementById('error-box');
+
+      if (targetId && REDIRECT_MAP[targetId]) {
+        const item = REDIRECT_MAP[targetId];
+        badgeEl.textContent = '目标：' + item.name;
+        titleEl.textContent = '正在前往 ' + item.name;
+        btnManual.href = item.url;
+        btnManual.textContent = '立即进入 ' + item.name + ' 官网 ↗';
+
+        // 立即执行安全无痕替换跳转
+        try {
+          window.location.replace(item.url);
+        } catch(e) {
+          window.location.href = item.url;
+        }
+
+        // 兜底定时器（若浏览器阻止了 replace）
+        setTimeout(function() {
+          descEl.innerHTML = '若页面未能在 2 秒内自动跳转，请点击下方按钮直接进入。';
+        }, 1500);
+      } else {
+        badgeEl.textContent = '⚠️ 参数未知';
+        titleEl.textContent = '未找到指定的官方通道';
+        descEl.textContent = '您所访问的跳转标识不存在或已更新，3 秒后将自动返回博客首页...';
+        btnManual.style.display = 'none';
+        errorBox.style.display = 'block';
+        errorBox.textContent = '无效的跳转 ID: ' + (targetId || '空');
+
+        setTimeout(function() {
+          window.location.replace('/');
+        }, 3000);
+      }
+    })();
+  </script>
+</body>
+</html>

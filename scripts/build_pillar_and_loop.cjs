@@ -13,7 +13,7 @@ const REVIEWS_DATA = [
   {
     name: '云界线',
     url: '/posts/yunjiexian-review-2026/',
-    affUrl: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L',
+    affUrl: '/go.html?id=yunjiexian',
     affCode: 'OOYhSj0L',
     tag: '#云界线',
     clients: 'Clash Verge Rev / Sing-box / 小火箭 / Surfboard / v2rayN（全平台一键唤醒免配）',
@@ -27,7 +27,7 @@ const REVIEWS_DATA = [
   {
     name: '大佬云',
     url: '/posts/dalaoyun-review-2026/',
-    affUrl: 'https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V',
+    affUrl: '/go.html?id=dalaoyun',
     affCode: 'QT2rqp5V',
     tag: '#大佬云',
     clients: 'Clash Verge / Nyanpasu / Sing-box / 小火箭 / Loon / QX / Surge / 订阅转换器',
@@ -41,7 +41,7 @@ const REVIEWS_DATA = [
   {
     name: '环球梯',
     url: '/posts/huanqiuti-review-2026/',
-    affUrl: 'https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU',
+    affUrl: '/go.html?id=huanqiuti',
     affCode: 'l7oLmjVU',
     tag: '#环球梯',
     clients: 'Clash Verge Rev / Sing-box / 小火箭 / v2rayN（协议自适应下发，告别格式报错）',
@@ -55,7 +55,7 @@ const REVIEWS_DATA = [
   {
     name: '榴莲云',
     url: '/article-liulianyun-2026-review.html',
-    affUrl: 'https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR',
+    affUrl: '/go.html?id=liulianyun',
     affCode: 'ETsQBSuR',
     tag: '#榴莲云',
     clients: 'Clash Verge Rev / Mihomo Party / Sing-box / 小火箭 / Android（全客户端一键拉取）',
@@ -69,7 +69,7 @@ const REVIEWS_DATA = [
   {
     name: '神行加速',
     url: '/article-shenxing-2026-review.html',
-    affUrl: 'https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK',
+    affUrl: '/go.html?id=shenxing',
     affCode: 'nn4ohwnK',
     tag: '#神行加速',
     clients: 'Clash Verge Rev / Sing-box / 小火箭 / Android（一键直链高速写入）',
@@ -83,7 +83,7 @@ const REVIEWS_DATA = [
   {
     name: '闪电鼠',
     url: '/article-shandianshu-2026-review.html',
-    affUrl: 'https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg',
+    affUrl: '/go.html?id=shandianshu',
     affCode: 'a3GAQAXg',
     tag: '#闪电鼠',
     clients: 'Clash Verge Rev / Sing-box / 小火箭 / Surge / v2rayN（格式全兼容一键唤醒）',
@@ -905,7 +905,7 @@ function generateHTML() {
                   <span>💰 <strong>资费参考</strong>：轻云基础版 ¥22/月（150GB 流量，不限设备）</span>
                   <div class="flex gap-3">
                     <a href="/posts/yunjiexian-review-2026/" class="font-bold text-primary-600 hover:underline dark:text-primary-400">📖 详细评测</a>
-                    <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
+                    <a href="/go.html?id=yunjiexian" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
                   </div>
                 </div>
               </div>
@@ -923,7 +923,7 @@ function generateHTML() {
                   <span>💰 <strong>资费参考</strong>：初云入门版 ¥23/月（130GB 流量，不限设备）</span>
                   <div class="flex gap-3">
                     <a href="/posts/dalaoyun-review-2026/" class="font-bold text-primary-600 hover:underline dark:text-primary-400">📖 详细评测</a>
-                    <a href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
+                    <a href="/go.html?id=dalaoyun" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
                   </div>
                 </div>
               </div>
@@ -941,7 +941,7 @@ function generateHTML() {
                   <span>💰 <strong>资费参考</strong>：环球轻享版 ¥22/月（120GB 流量，限 3 台设备）</span>
                   <div class="flex gap-3">
                     <a href="/posts/huanqiuti-review-2026/" class="font-bold text-primary-600 hover:underline dark:text-primary-400">📖 详细评测</a>
-                    <a href="https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
+                    <a href="/go.html?id=huanqiuti" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
                   </div>
                 </div>
               </div>
@@ -959,7 +959,7 @@ function generateHTML() {
                   <span>💰 <strong>资费参考</strong>：特惠折合 ¥8~16.8/月（轻享/搬迁包，不限设备）</span>
                   <div class="flex gap-3">
                     <a href="/article-liulianyun-2026-review.html" class="font-bold text-primary-600 hover:underline dark:text-primary-400">📖 详细评测</a>
-                    <a href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
+                    <a href="/go.html?id=liulianyun" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
                   </div>
                 </div>
               </div>
@@ -977,7 +977,7 @@ function generateHTML() {
                   <span>💰 <strong>资费参考</strong>：大流量基础版 ¥18/月（300GB 流量，多设备并发）</span>
                   <div class="flex gap-3">
                     <a href="/article-shenxing-2026-review.html" class="font-bold text-primary-600 hover:underline dark:text-primary-400">📖 详细评测</a>
-                    <a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
+                    <a href="/go.html?id=shenxing" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
                   </div>
                 </div>
               </div>
@@ -995,7 +995,7 @@ function generateHTML() {
                   <span>💰 <strong>资费参考</strong>：月付 ¥22（120G）或 年付 ¥96（折合 ¥8/月，不限设备）</span>
                   <div class="flex gap-3">
                     <a href="/article-shandianshu-2026-review.html" class="font-bold text-primary-600 hover:underline dark:text-primary-400">📖 详细评测</a>
-                    <a href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
+                    <a href="/go.html?id=shandianshu" target="_blank" rel="nofollow sponsored noopener noreferrer" class="font-bold text-neutral-700 hover:text-primary-600 dark:text-neutral-300">🚀 官网直达 ↗</a>
                   </div>
                 </div>
               </div>
