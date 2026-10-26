@@ -1,7 +1,4 @@
 User-agent: *
-Disallow: /go.html
-Disallow: /go/
-Disallow: /go
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 Allow: /
 {{- else }}

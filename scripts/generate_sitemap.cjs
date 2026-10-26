@@ -178,9 +178,14 @@ function buildSitemap() {
         if (locMatch) {
           const rawLoc = locMatch[1].trim();
           const loc = normalizeUrl(rawLoc);
+          const pathOnly = loc.replace(BASE_URL, '');
+          // 彻底排除承接页与外部跳转中转路径，严禁进入站点地图
+          if (pathOnly === '/go.html' || pathOnly === '/go' || pathOnly.startsWith('/go/')) {
+            continue;
+          }
           const cleanLastmod = lastmodMatch ? formatDate(lastmodMatch[1].trim()) : '2026-10-18';
           const { priority: defPriority, changefreq: defFreq } = getPriorityAndFreq(
-            loc.replace(BASE_URL, '')
+            pathOnly
           );
           urlMap.set(loc, {
             loc,
@@ -203,9 +208,10 @@ function buildSitemap() {
   for (const filePath of allHtml) {
     const rel = path.relative(PUBLIC_DIR, filePath).split(path.sep).join('/');
     
-    // 排除非公开/系统文件
+    // 排除非公开/系统文件与重定向承接页
     if (rel === '404.html') continue;
     if (rel.includes('/page/')) continue; // 排除分页重复页
+    if (rel === 'go.html' || rel === 'go' || rel.startsWith('go/')) continue;
 
     let urlPath = '';
     if (rel === 'index.html') {
@@ -299,7 +305,7 @@ function buildSitemap() {
   // 6. 语法严格自检
   validateXml(xml, sortedEntries.length);
 
-  // 7. 写入发布目录与源码静态目录
+  // 7. 写入发布目录、源码静态目录与根目录
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), xml, 'utf-8');
   console.log(`✓ 成功写入: ${path.relative(ROOT_DIR, path.join(PUBLIC_DIR, 'sitemap.xml'))}`);
 
@@ -307,6 +313,8 @@ function buildSitemap() {
     fs.writeFileSync(path.join(STATIC_DIR, 'sitemap.xml'), xml, 'utf-8');
     console.log(`✓ 成功同步持久化: ${path.relative(ROOT_DIR, path.join(STATIC_DIR, 'sitemap.xml'))}`);
   }
+  fs.writeFileSync(path.join(ROOT_DIR, 'sitemap.xml'), xml, 'utf-8');
+  console.log(`✓ 成功同步根目录: sitemap.xml`);
 
   return { total: sortedEntries.length, xml };
 }
@@ -377,6 +385,11 @@ function validateXml(xmlString, expectedCount) {
     // 检查是否包含双重转义 &amp;amp;
     if (loc.includes('&amp;amp;')) {
       throw new Error(`检测到双重转义: ${loc}`);
+    }
+    // 严格检查是否包含 /go/ 或 /go.html
+    const pathOnly = loc.replace(BASE_URL, '');
+    if (pathOnly === '/go.html' || pathOnly === '/go' || pathOnly.startsWith('/go/')) {
+      throw new Error(`站点地图中检测到禁止收录的重定向/承接页路径: ${loc}`);
     }
   }
 
