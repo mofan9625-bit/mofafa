@@ -11,6 +11,7 @@
 /go/shenxing      https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK       301!
 /go/shandianshu   https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg    301!
 /go/edgenova      https://wep.edgenovaaff.com/#/?code=nr2kdl68               301!
+/go/sujie         https://pygllc.speedworldaff.cc/#/?code=f3fRpBfX            301!
 
 # 2. 尾随斜杠规范化兼容
 /go/yunjiexian/   https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L    301!
@@ -20,6 +21,7 @@
 /go/shenxing/     https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK       301!
 /go/shandianshu/  https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg    301!
 /go/edgenova/     https://wep.edgenovaaff.com/#/?code=nr2kdl68               301!
+/go/sujie/        https://pygllc.speedworldaff.cc/#/?code=f3fRpBfX            301!
 
 # 3. Netlify Query 参数重定向 (/go.html?id=xxx)
 /go.html id=yunjiexian    https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L    301!
@@ -29,6 +31,7 @@
 /go.html id=shenxing      https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK       301!
 /go.html id=shandianshu   https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg    301!
 /go.html id=edgenova      https://wep.edgenovaaff.com/#/?code=nr2kdl68               301!
+/go.html id=sujie         https://pygllc.speedworldaff.cc/#/?code=f3fRpBfX            301!
 
 # 4. 未知 /go/ 参数路由兜底到承接页
 /go/*             /go.html?id=:splat                                        302
