@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /cdn-cgi/
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 Allow: /
 {{- else }}

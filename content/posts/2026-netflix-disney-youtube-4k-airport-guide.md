@@ -6,7 +6,7 @@ draft: false
 description: "2026 Netflix奈飞解锁机场、Disney+报错和4K 8K油管测速跑分指南，比较美区、港区、日区、新加坡区平台状态与大屏电视选线方法。"
 summary: "从地区库、代理识别、4K持续带宽和Apple TV设备条件出发，教你测试Netflix、Disney+和YouTube节点。"
 categories: ["机场测评", "使用教程"]
-tags: ["Netflix奈飞解锁机场", "Disney+报错怎么办", "4K 8K油管测速跑分", "流媒体解锁", "Apple TV", "机场推荐"]
+tags: ["Netflix奈飞解锁机场", "Disney", "Disney+报错怎么办", "4K 8K油管测速跑分", "流媒体解锁", "Apple TV", "机场推荐"]
 featureimage: "images/covers/cover-10.jpg"
 showHero: true
 showTableOfContents: true
