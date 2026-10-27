@@ -296,7 +296,8 @@ const tutorialCards = [
     ],
     tags: [
       { name: 'Netflix奈飞解锁机场', url: '/tags/netflix%E5%A5%88%E9%A3%9E%E8%A7%A3%E9%94%81%E6%9C%BA%E5%9C%BA/' },
-      { name: 'Disney+报错怎么办', url: '/tags/disney+%E6%8A%A5%E9%94%99%E6%80%8E%E4%B9%88%E5%8A%9E/' },
+      { name: 'Disney', url: '/tags/disney/' },
+      { name: 'Disney报错排查', url: '/tags/disney%E6%8A%A5%E9%94%99%E6%8E%92%E6%9F%A5/' },
       { name: '4K 8K油管测速跑分', url: '/tags/4k-8k%E6%B2%B9%E7%AE%A1%E6%B5%8B%E9%80%9F%E8%B7%91%E5%88%86/' },
       { name: '流媒体解锁', url: '/tags/%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81/' },
       { name: 'Apple TV', url: '/tags/apple-tv/' },

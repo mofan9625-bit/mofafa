@@ -36,8 +36,11 @@
 # 4. 未知 /go/ 参数路由兜底到承接页
 /go/*             /go.html?id=:splat                                        302
 
-# 5. 修复 Bing 4xx 错误 (Disney 标签重定向与 Cloudflare 边缘路径拦截)
+# 5. 修复 Bing 4xx 及破损规范URL错误 (Disney 标签规范化与 Cloudflare 边缘拦截)
 /tags/disney                 /tags/disney/                                             301!
+/tags/disney+*               /tags/disney/                                             301!
+/tags/disney%2B*             /tags/disney/                                             301!
+/tags/disney%20*             /tags/disney/                                             301!
 /cdn-cgi/l/email-protection  /                                                         301!
 /cdn-cgi/*                   /                                                         301!
 
