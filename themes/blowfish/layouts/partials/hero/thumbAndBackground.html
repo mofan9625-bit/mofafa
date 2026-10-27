@@ -94,7 +94,7 @@
   <div class="overflow-hidden rounded-md h-36 md:h-56 lg:h-72 nozoom">
     <img
       src="{{ . }}"
-      role="presentation"
+      alt="{{ $.Title | default site.Title }}"
       loading="eager"
       decoding="async"
       fetchpriority="high"
@@ -119,7 +119,7 @@
     <img
       id="background-image-main"
       src="{{ . }}"
-      role="presentation"
+      alt="{{ $.Title | default site.Title }} - 封面背景图"
       loading="eager"
       decoding="async"
       fetchpriority="high"

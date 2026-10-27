@@ -88,11 +88,13 @@
     {{ $defaultPosition := cond $useDefault site.Params.imagePosition false }}
     {{ with $.Params.imagePosition | default $defaultPosition }}
       {{ $style = printf "object-position: %s;" . }}
-    {{ end }}
+    {{- $alt := $.Title | default site.Title -}}
+    {{- with $.Params.featureimagealt }}{{ $alt = . }}{{ end -}}
+    {{- with $.Params.alt }}{{ $alt = . }}{{ end -}}
     <img
       id="background-image"
       src="{{ . }}"
-      role="presentation"
+      alt="{{ $alt }}"
       loading="eager"
       decoding="async"
       fetchpriority="high"

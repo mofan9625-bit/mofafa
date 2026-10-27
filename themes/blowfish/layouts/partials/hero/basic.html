@@ -56,7 +56,7 @@
   <div class="overflow-hidden h-36 md:h-56 lg:h-72">
     <img
       src="{{ . }}"
-      role="presentation"
+      alt="{{ $.Title | default site.Title }}"
       loading="eager"
       decoding="async"
       fetchpriority="high"
