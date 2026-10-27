@@ -4,12 +4,14 @@ const path = require('path');
 const ROOT_DIR = path.resolve(__dirname, '..');
 
 const REDIRECT_MAP = {
-  'yunjiexian': { name: '云界线', url: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L' },
-  'dalaoyun': { name: '大佬云', url: 'https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V' },
-  'huanqiuti': { name: '环球梯', url: 'https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU' },
-  'liulianyun': { name: '榴莲云', url: 'https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR' },
-  'shenxing': { name: '神行加速', url: 'https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK' },
-  'shandianshu': { name: '闪电鼠', url: 'https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg' }
+  'yunjiexian': { name: '云界线 (Yunjiexian)', url: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L' },
+  'dalaoyun': { name: '大佬云 (Dalaoyun)', url: 'https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V' },
+  'huanqiuti': { name: '环球梯 (Huanqiuti)', url: 'https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU' },
+  'liulianyun': { name: '榴莲云 (Liulianyun)', url: 'https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR' },
+  'shenxing': { name: '神行加速 (Shenxing)', url: 'https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK' },
+  'shandianshu': { name: '闪电鼠 (Shandianshu)', url: 'https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg' },
+  'edgenova': { name: '边缘节点 (EdgeNova)', url: 'https://wep.edgenovaaff.com/#/?code=nr2kdl68' },
+  'sujie': { name: '速界 (SpeedWorld)', url: 'https://pygllc.speedworldaff.cc/#/?code=f3fRpBfX' }
 };
 
 function generateHtml(key, item) {
@@ -19,7 +21,10 @@ function generateHtml(key, item) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>正在前往 ${item.name} - 魔法Clash机场知识库</title>
+  <meta name="description" content="正在安全前往 ${item.name} 官方通道，魔法Clash机场知识库提供高速加密直达服务。">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="refresh" content="0; url=${item.url}">
   <script>window.location.replace("${item.url}");</script>
@@ -42,4 +47,4 @@ function generateHtml(key, item) {
   }
 });
 
-console.log('✓ Successfully regenerated /go/ fallback folders for all 6 airports');
+console.log('✓ Successfully regenerated /go/ fallback folders for all 8 airports');

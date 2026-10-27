@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>安全跳转中 - 魔法Clash机场知识库</title>
+  <meta name="description" content="魔法Clash机场知识库官方安全直达通道，为用户提供受加密保护的优质机场官网跳转与优惠服务。">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
@@ -243,6 +244,10 @@
 
       if (targetId && REDIRECT_MAP[targetId]) {
         const item = REDIRECT_MAP[targetId];
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+          metaDesc.setAttribute('content', '正在安全前往 ' + item.name + ' 官方页面，魔法Clash机场知识库高速加密直达通道。');
+        }
         badgeEl.textContent = '目标：' + item.name;
         titleEl.textContent = '正在前往 ' + item.name;
         btnManual.href = item.url;
