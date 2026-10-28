@@ -1,0 +1,5141 @@
+<!doctype html>
+<html
+  lang="zh-cn"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="zh-cn">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    
+    
+    
+    
+    <title>一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案 - 魔法Clash机场</title>
+    <meta name="title" content="一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案 - 魔法Clash机场">
+  
+
+  
+  
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    <meta name="description" content="分析一元机场节点缩水、只有香港节点且缺少美国/日本节点的深层技术与成本原因，评估访问受限场景并提供低预算备用策略。">
+  
+  
+    <meta name="keywords" content="一元机场,香港节点,美国节点,节点缩水,订阅排查,节点失效,低价机场,">
+  
+  
+  
+  <link rel="canonical" href="https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/">
+  
+  
+  
+
+  
+  
+    <meta name="author" content="魔法Clash机场">
+  
+  
+
+  
+  <meta property="og:url" content="https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/">
+	<meta property="og:site_name" content="魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南">
+	<meta property="og:title" content="一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案">
+	<meta property="og:description" content="为什么购买的一元机场或低价订阅经常只有香港节点、没有美国节点？本文从带宽成本、风控封禁机制、超售运维分析节点缩水原因，并提供实用排查技巧与高性价比稳定替代方案。">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-10-28T16:45:00+08:00">
+		<meta property="article:modified_time" content="2026-10-28T16:45:00+08:00">
+		<meta property="article:tag" content="一元机场">
+		<meta property="article:tag" content="香港节点">
+		<meta property="article:tag" content="美国节点">
+		<meta property="article:tag" content="节点缩水">
+		<meta property="article:tag" content="订阅排查">
+		<meta property="article:tag" content="节点失效">
+
+  
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案">
+	<meta name="twitter:description" content="为什么购买的一元机场或低价订阅经常只有香港节点、没有美国节点？本文从带宽成本、风控封禁机制、超售运维分析节点缩水原因，并提供实用排查技巧与高性价比稳定替代方案。">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+      
+      
+        
+      
+      
+        <meta name="twitter:image" content="https://mofaclashjichang.com/img/blowfish_banner.png">
+        <meta property="og:image" content="https://mofaclashjichang.com/img/blowfish_banner.png">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.css"
+    >
+
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.js"
+    ></script>
+  
+
+
+  
+  
+  
+  
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/zen-mode.min.js"
+      ></script>
+  
+  
+    
+    
+    <script defer src="/lib/zoom/zoom.min.umd.js" ></script>
+    
+    
+    <script defer src="/js/medium-zoom.js" ></script>
+  
+  
+  
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/reading-progress.min.js"
+      ></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+    
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.js"
+      
+      data-copy="复制"
+      data-copied="已复制"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  
+  <script>
+    (function () {
+      var load = function () {
+        import("\/js\/firebase.min.a55cc7a6fdc0d350f63721ac72b6d9c89fc4be3e7dd4efbc12897006492d829b.js");
+      };
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(load, { timeout: 4000 });
+      } else {
+        window.addEventListener("load", function () {
+          setTimeout(load, 1500);
+        });
+      }
+    })();
+  </script>
+
+  
+    
+    
+      
+      
+        
+      
+      
+<script id="firebase-config" 
+        type="application/json"
+        data-views="views_posts\2026-why-one-yuan-airport-only-has-hong-kong-nodes.md"
+        data-likes="likes_posts\2026-why-one-yuan-airport-only-has-hong-kong-nodes.md">
+  {
+    "config": {
+      "apiKey": "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY",
+      "authDomain": "blowfish-21fff.firebaseapp.com",
+      "projectId": "blowfish-21fff",
+      "storageBucket": "blowfish-21fff.appspot.com",
+      "messagingSenderId": "60108104191",
+      "appId": "1:60108104191:web:039842ebe1370698b487ca",
+      "measurementId": "G-PEDMYR1V0K"
+    }
+  }
+</script>
+
+    
+  
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "使用教程与实操知识库",
+    "name": "一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案",
+    "headline": "一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案",
+    "description": "为什么购买的一元机场或低价订阅经常只有香港节点、没有美国节点？本文从带宽成本、风控封禁机制、超售运维分析节点缩水原因，并提供实用排查技巧与高性价比稳定替代方案。",
+    "inLanguage": "zh-cn",
+    "url" : "https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/",
+    "author" : {
+      "@type": "Person",
+      "name": "魔法Clash机场"
+    },
+    "copyrightYear": "2026",
+    "dateCreated": "2026-10-28T16:45:00\u002b08:00",
+    "datePublished": "2026-10-28T16:45:00\u002b08:00",
+    
+    "dateModified": "2026-10-28T16:45:00\u002b08:00",
+    
+    "keywords": ["一元机场","香港节点","美国节点","节点缩水","订阅排查","节点失效","低价机场"],
+    
+    "mainEntityOfPage": "https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/",
+    "wordCount":  3285 
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+            "@type": "ListItem",
+            "position":  1 ,
+            "name": "使用教程与实操知识库",
+            "item": "https://mofaclashjichang.com/posts/"
+          },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "name": "一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案",
+        "item": "https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/"
+      }
+    ]
+  }]
+  </script>
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+  
+  
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        跳过正文
+      </a>
+    </div>
+    <header>
+      
+      
+        <div class="min-h-32"></div>
+<div class="fixed inset-x-0 top-3 z-100 px-3 sm:top-5 sm:px-6">
+  <div
+    class="relative mx-auto max-w-7xl rounded-2xl border border-neutral-200/80 shadow-lg shadow-neutral-900/5 dark:border-neutral-700/80 [&_img.logo]:max-h-10 [&_img.logo]:max-w-10">
+    <div class="absolute inset-0 -z-10 rounded-2xl bg-neutral/60 backdrop-blur-xl dark:bg-neutral-800/60"></div>
+    <div class="px-3">
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+    
+    
+      <div>
+        <a href="/" class="flex">
+          <span class="sr-only">魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南</span>
+          
+            <img
+              src="/img/blowfish_logo_transparent.png"
+              width="1000"
+              height="1000"
+              class="logo max-h-20 max-w-20 object-scale-down object-left nozoom"
+              alt="魔法Clash机场Logo">
+          
+        </a>
+      </div>
+    
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav aria-label="" class="flex items-center gap-x-5 h-12">
+  
+    
+      
+  
+    <a
+      href="/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="首页"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          首页
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/airports/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="机场推荐"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          机场推荐
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/reviews.html"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="单品测评"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          单品测评
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/posts/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="博客归档"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          博客归档
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/tools/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="工具使用"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          工具使用
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/disclaimer/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="免责声明"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          免责声明
+        </span>
+      
+    </a>
+  
+
+    
+  
+
+  
+
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="切换为深色模式"
+        type="button"
+        class="text-sm bf-icon-color-hover"
+        title="切换为深色模式">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="搜索 (/)"
+      class="flex items-center gap-2 rounded-lg border bf-border-color bf-border-color-hover bg-neutral-100/50 px-2 py-1 text-sm text-neutral-500 transition-colors hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral-400 dark:hover:text-primary-400"
+      title="搜索 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      <kbd
+        id="search-shortcut-hint"
+        class="pointer-events-none font-sans text-xs text-neutral-500 dark:text-neutral-400"
+        aria-hidden="true">
+        ⌘K
+      </kbd>
+    </button>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      
+<div class="mobile-header-row relative flex items-center h-14 gap-4">
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="切换为深色模式"
+      title="切换为深色模式"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+    <button
+      id="search-button-mobile"
+      aria-label="搜索 (/)"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="搜索 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label
+      for="mobile-menu-toggle"
+      tabindex="0"
+      role="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu-dialog"
+      aria-label=""
+      class="flex items-center justify-center cursor-pointer bf-icon-color-hover">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+    </label>
+
+    <div
+      id="mobile-menu-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-label=""
+      style="scrollbar-gutter: stable;"
+      class="z-50 invisible overflow-y-auto opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100
+      
+        mobile-menu-style-dropdown absolute end-0 top-[calc(100%+0.75rem)] z-10 w-[min(22rem,calc(100vw-1.5rem))] rounded-2xl border border-neutral-200/80 bg-neutral/95 p-5 shadow-2xl shadow-neutral-900/20 dark:border-neutral-700/80 dark:bg-neutral-800/95
+      
+      bf-scrollbar">
+      <label
+        for="mobile-menu-toggle"
+        tabindex="0"
+        role="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu-dialog"
+        class="absolute end-3 top-3 h-10 w-10 rounded-xl flex items-center justify-center cursor-pointer select-none bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        <span class="sr-only"></span>
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </label>
+      <nav
+        aria-label=""
+        class="mt-10 space-y-3">
+        
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/"
+          aria-label="首页"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            首页
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/airports/"
+          aria-label="机场推荐"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            机场推荐
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/reviews.html"
+          aria-label="单品测评"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            单品测评
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/posts/"
+          aria-label="博客归档"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            博客归档
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/tools/"
+          aria-label="工具使用"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            工具使用
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/disclaimer/"
+          aria-label="免责声明"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            免责声明
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+
+        
+  
+
+        
+  
+
+      </nav>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script>
+    (function () {
+      var mainmenu = document.querySelector(".main-menu");
+      if (!mainmenu) return;
+
+      var path = window.location.pathname;
+      var links = mainmenu.querySelectorAll('a[href="' + path + '"]');
+
+      links.forEach(function (link) {
+        var targets = link.querySelectorAll("span");
+        targets.forEach(function (el) {
+          el.classList.add("active");
+        });
+      });
+    })();
+  </script>
+
+
+    </div>
+  </div>
+</div>
+
+      
+    </header>
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  
+  
+  
+    <div
+  id="reading-progress"
+  class="fixed left-0 top-0 z-100 h-1 w-0 bg-primary-500 dark:bg-primary-400 print:hidden"
+  aria-hidden="true"></div>
+
+  
+  <article>
+    
+    
+      
+      
+      
+      
+        
+
+
+
+
+
+  
+    
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+      
+    
+  
+
+
+
+
+
+
+
+  
+
+
+
+    <div id="hero" class="h-[150px] md:h-[200px]"></div>
+  
+  <div
+    id="hero-background"
+    class="hero-canvas-fade fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom">
+    
+    
+    <img
+      id="background-image"
+      src="/images/covers/cover-6_hu_8d76f0b1ed43fb7f.jpg"
+      alt="一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+       />
+    <div class="absolute inset-0 bg-neutral/60 dark:bg-neutral-800/50"></div>
+  </div>
+
+  
+    
+      
+      
+      <script
+        type="text/javascript"
+        src="/js/hero-scroll-fade.min.bad3ef1d1ec690723f1ae1a027e60f578e1aec975ab34f5c41d256e2f4451c23.js"
+        integrity="sha256-utPvHR7GkHI/GuGgJ&#43;YPV44a7Jdas09cQdJW4vRFHCM="
+        data-hero-id="hero-background"
+        data-fade-distance="500"></script>
+    
+  
+      
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/"
+      >魔法Clash机场 - 2026 稳定高速节点推荐与专线测速指南</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/"
+      >使用教程与实操知识库</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/"
+      >一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        一元机场为什么只有香港节点？没有美国节点的原因分析与低成本稳定替代方案
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>3285 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">7 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-why-one-yuan-airport-only-has-hong-kong-nodes.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span class="mb-[2px]">
+  <span
+    id="zen-mode-button"
+    class="text-lg hover:text-primary-500"
+    title="啟用阅读模式"
+    data-title-i18n-disable="啟用阅读模式"
+    data-title-i18n-enable="停用阅读模式">
+    <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+    <path fill="currentColor" d="M 12.980469 4 C 9.1204688 4 5.9804688 7.14 5.9804688 11 L 6 26 L 9.9804688 26 L 9.9804688 11 C 9.9804688 9.35 11.320469 8 12.980469 8 L 40.019531 8 C 41.679531 8 43.019531 9.35 43.019531 11 L 43.019531 39 C 43.019531 40.65 41.679531 42 40.019531 42 L 29 42 C 29 43.54 28.420938 44.94 27.460938 46 L 40.019531 46 C 43.879531 46 47.019531 42.86 47.019531 39 L 47.019531 11 C 47.019531 7.14 43.879531 4 40.019531 4 L 12.980469 4 z M 7 28 C 4.794 28 3 29.794 3 32 L 3 42 C 3 44.206 4.794 46 7 46 L 23 46 C 25.206 46 27 44.206 27 42 L 27 32 C 27 29.794 25.206 28 23 28 L 7 28 z M 7 32 L 23 32 L 23.001953 42 L 7 42 L 7 32 z"/>
+</svg></span></span>
+  </span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场知识
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    故障排查
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E4%B8%80%E5%85%83%E6%9C%BA%E5%9C%BA/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    一元机场
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E9%A6%99%E6%B8%AF%E8%8A%82%E7%82%B9/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    香港节点
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E7%BE%8E%E5%9B%BD%E8%8A%82%E7%82%B9/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    美国节点
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%8A%82%E7%82%B9%E7%BC%A9%E6%B0%B4/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    节点缩水
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%AE%A2%E9%98%85%E6%8E%92%E6%9F%A5/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    订阅排查
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%8A%82%E7%82%B9%E5%A4%B1%E6%95%88/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    节点失效
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E4%BD%8E%E4%BB%B7%E6%9C%BA%E5%9C%BA/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    低价机场
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+      
+      
+<div class="flex author">
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        作者
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        魔法Clash机场
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">提供 2026 最新 Clash / Sing-box / Shadowrocket 订阅节点推荐、IPLC 专线实测及避坑指南，助力跨境办公与 AI 高速访问。</div>
+    
+    <div class="text-2xl sm:text-lg">
+</div>
+  </div>
+</div>
+
+    
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents" aria-label="目录">
+  <ul>
+    <li><a href="#一为什么低价套餐往往只剩下香港节点">一、为什么低价套餐往往只剩下香港节点？</a>
+      <ul>
+        <li><a href="#1-香港与长途跨洋节点的采购成本差异巨大">1. 香港与长途跨洋节点的采购成本差异巨大</a></li>
+        <li><a href="#2-公共出口风控与-ip-频繁被封锁">2. 公共出口风控与 IP 频繁被封锁</a></li>
+        <li><a href="#3-运维资源的保底维持策略">3. 运维资源的“保底维持”策略</a></li>
+      </ul>
+    </li>
+    <li><a href="#二只有香港节点会对日常使用带来哪些实质影响">二、只有香港节点会对日常使用带来哪些实质影响？</a></li>
+    <li><a href="#三排查步骤是节点真的下线了还是本地设置问题">三、排查步骤：是节点真的下线了，还是本地设置问题？</a>
+      <ul>
+        <li><a href="#第一步排查本地订阅缓存并强制全量更新">第一步：排查本地订阅缓存并强制全量更新</a></li>
+        <li><a href="#第二步检查客户端是否设置了节点筛选正则">第二步：检查客户端是否设置了“节点筛选正则”</a></li>
+        <li><a href="#第三步检查分流规则与节点连通性延迟">第三步：检查分流规则与节点连通性延迟</a></li>
+      </ul>
+    </li>
+    <li><a href="#四低预算用户的理性解决方案主备搭配策略">四、低预算用户的理性解决方案：主备搭配策略</a>
+      <ul>
+        <li><a href="#1-甄选覆盖全地区原生节点的优质平价服务">1. 甄选覆盖全地区原生节点的优质平价服务</a></li>
+        <li><a href="#2-合理配置客户端的分流规则">2. 合理配置客户端的分流规则</a></li>
+      </ul>
+    </li>
+    <li><a href="#五总结与建议">五、总结与建议</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContentsMobile" aria-label="目录">
+  <ul>
+    <li><a href="#一为什么低价套餐往往只剩下香港节点">一、为什么低价套餐往往只剩下香港节点？</a>
+      <ul>
+        <li><a href="#1-香港与长途跨洋节点的采购成本差异巨大">1. 香港与长途跨洋节点的采购成本差异巨大</a></li>
+        <li><a href="#2-公共出口风控与-ip-频繁被封锁">2. 公共出口风控与 IP 频繁被封锁</a></li>
+        <li><a href="#3-运维资源的保底维持策略">3. 运维资源的“保底维持”策略</a></li>
+      </ul>
+    </li>
+    <li><a href="#二只有香港节点会对日常使用带来哪些实质影响">二、只有香港节点会对日常使用带来哪些实质影响？</a></li>
+    <li><a href="#三排查步骤是节点真的下线了还是本地设置问题">三、排查步骤：是节点真的下线了，还是本地设置问题？</a>
+      <ul>
+        <li><a href="#第一步排查本地订阅缓存并强制全量更新">第一步：排查本地订阅缓存并强制全量更新</a></li>
+        <li><a href="#第二步检查客户端是否设置了节点筛选正则">第二步：检查客户端是否设置了“节点筛选正则”</a></li>
+        <li><a href="#第三步检查分流规则与节点连通性延迟">第三步：检查分流规则与节点连通性延迟</a></li>
+      </ul>
+    </li>
+    <li><a href="#四低预算用户的理性解决方案主备搭配策略">四、低预算用户的理性解决方案：主备搭配策略</a>
+      <ul>
+        <li><a href="#1-甄选覆盖全地区原生节点的优质平价服务">1. 甄选覆盖全地区原生节点的优质平价服务</a></li>
+        <li><a href="#2-合理配置客户端的分流规则">2. 合理配置客户端的分流规则</a></li>
+      </ul>
+    </li>
+    <li><a href="#五总结与建议">五、总结与建议</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+    let isJumpingToAnchor = false
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      
+      
+      
+      
+      
+      
+      const canScroll =
+        document.documentElement.scrollHeight > window.innerHeight + 1
+      if (!canScroll) {
+        const fromHash = decodeURIComponent(window.location.hash.substring(1))
+        const known = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+          .map(link => decodeURIComponent(link.getAttribute('href').substring(1)))
+        if (fromHash && known.includes(fromHash)) return fromHash
+      }
+
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      if (isJumpingToAnchor) {
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i]
+          if (!tocIds.has(anchor.id)) continue
+          const top = anchor.getBoundingClientRect().top + window.scrollY
+          if (Math.abs(window.scrollY - top) < 100) {
+            return anchor.id
+          }
+        }
+      }
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          isJumpingToAnchor = true
+        })
+      })
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>在刚接触网络代理与国际网络加速服务时，许多用户都会被“月付一元即可拥有上百 GB 流量”的低价套餐所吸引。然而，在实际使用数周甚至仅数天后，不少用户都会遇到一个十分普遍的困扰：<strong>打开客户端刷新订阅，原本宣传中丰富的节点列表严重“缩水”，列表中往往只剩下了寥寥数个香港节点，而原本应该具备的美国、日本、新加坡等节点要么完全消失，要么常年处于红色超时状态。</strong></p>
+<p>很多用户甚至会在搜索引擎中反复查询：“一元机场为什么只有香港节点？”、“为什么一元机场没有美国节点？”以及“一元机场越来越难用该如何解决？”。</p>
+<p>这种现象并非客户端偶发故障，而是低价运营模式下必然产生的技术与成本博弈。本文将从底层带宽成本、海外服务风控机制、超售运维逻辑三个维度深入解析节点缩水的真实原因，并为您提供实用的排查方法与稳健的低成本替代思路。</p>
+<hr>
+
+<h2 class="relative group">一、为什么低价套餐往往只剩下香港节点？
+    <div id="一为什么低价套餐往往只剩下香港节点" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%b8%80%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bd%8e%e4%bb%b7%e5%a5%97%e9%a4%90%e5%be%80%e5%be%80%e5%8f%aa%e5%89%a9%e4%b8%8b%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>要理解节点分布为什么会急剧缩减，首先需要了解国际跨境网络资源的采购与运营成本。</p>
+
+<h3 class="relative group">1. 香港与长途跨洋节点的采购成本差异巨大
+    <div id="1-香港与长途跨洋节点的采购成本差异巨大" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-%e9%a6%99%e6%b8%af%e4%b8%8e%e9%95%bf%e9%80%94%e8%b7%a8%e6%b4%8b%e8%8a%82%e7%82%b9%e7%9a%84%e9%87%87%e8%b4%ad%e6%88%90%e6%9c%ac%e5%b7%ae%e5%bc%82%e5%b7%a8%e5%a4%a7" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>在网络加速的架构中，香港由于地理位置毗邻内地，物理距离极短，拥有密集的国际海缆和丰富的互联数据中心（IDC）。因此，香港机房的直连带宽采购门槛相对较低，网络延迟通常可维持在 30ms 至 80ms 之间，容易在速度测试中跑出漂亮的数据。</p>
+<p>相比之下，美国、欧洲等跨洋远距离线路需要租用昂贵的跨洋海底光缆链路。如果是真正具备低延迟、低丢包表现的高质量专线（如 IEPL 或 IPLC 专线），每 Gbps 的月租费用极为高昂。对于主打“每月一元”甚至几毛钱的低廉套餐而言，微薄的用户付费根本无法长期维持跨洋专线的开销。为了压缩支出，服务提供商最直接的做法就是<strong>直接关闭或下架维护成本更高的长途节点，仅保留少数低成本的香港普通公网链路</strong>。</p>
+
+<h3 class="relative group">2. 公共出口风控与 IP 频繁被封锁
+    <div id="2-公共出口风控与-ip-频繁被封锁" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-%e5%85%ac%e5%85%b1%e5%87%ba%e5%8f%a3%e9%a3%8e%e6%8e%a7%e4%b8%8e-ip-%e9%a2%91%e7%b9%81%e8%a2%ab%e5%b0%81%e9%94%81" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>这也是美国节点更容易“阵亡”的核心原因：</p>
+<ul>
+<li><strong>高密度滥用与风控黑名单</strong>：一元套餐通常伴随着极端严重的超售现象。成百上千甚至上万名用户共用极少量的出口服务器 IP。只要其中少数用户使用该出口进行高频爬虫、批量注册、滥用网络请求，该 IP 段就会迅速被各大国际互联网平台（如 Cloudflare、Google、各类主流流媒体与海外金融应用）列入黑名单；</li>
+<li><strong>更换 IP 的边际成本无法承受</strong>：在正规专线或中高端服务商处，一旦出口 IP 出现访问受限，运维团队会迅速采购新的干净落地 IP 并进行调度替换；但对于一元机场而言，更换一个干净且未被风控的原生 IP 所需的费用，往往远超过该节点能带来的月度总收益。因此，服务商通常只能选择“节点坏了就直接移除”，最终导致非热门地区节点逐个下线。</li>
+</ul>
+
+<h3 class="relative group">3. 运维资源的“保底维持”策略
+    <div id="3-运维资源的保底维持策略" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-%e8%bf%90%e7%bb%b4%e8%b5%84%e6%ba%90%e7%9a%84%e4%bf%9d%e5%ba%95%e7%bb%b4%e6%8c%81%e7%ad%96%e7%95%a5" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>低价服务商的维护人力十分有限。当服务器出现故障或带宽告警时，运维通常遵循“保底可用”原则——只要还有一两个香港节点能够保持连通、让部分网页能正常打开，服务便算作“依然在线”，以此拖延用户流失与工单压力。关于低价超售背后的详细运作模式，我们在<a href="/posts/2026-why-one-yuan-airports-are-unreliable/" >一元机场为什么不能用？低价背后的超售与限速成本</a>
+一文中做过详细测算。</p>
+<hr>
+
+<h2 class="relative group">二、只有香港节点会对日常使用带来哪些实质影响？
+    <div id="二只有香港节点会对日常使用带来哪些实质影响" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%ba%8c%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%e4%bc%9a%e5%af%b9%e6%97%a5%e5%b8%b8%e4%bd%bf%e7%94%a8%e5%b8%a6%e6%9d%a5%e5%93%aa%e4%ba%9b%e5%ae%9e%e8%b4%a8%e5%bd%b1%e5%93%8d" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>很多新手用户可能会产生疑问：“既然香港节点延迟挺低，那我只用香港节点不就可以了吗？”</p>
+<p>答案是：<strong>对于仅浏览常规资讯的用户而言或许勉强可用，但对于多场景、有特定业务需求的用户，只有香港节点会带来严重的体验瓶颈。</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">使用场景</th>
+					<th style="text-align: left">仅有香港节点时的常见问题</th>
+					<th style="text-align: left">核心原因</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>国际主流 AI 工具</strong></td>
+					<td style="text-align: left">频繁提示 <code>Not available in your country/region</code>，甚至导致账户受限</td>
+					<td style="text-align: left">多数先进人工智能服务在部分地区暂未正式开放，必须依赖合规的美国、日韩等合规地区原生节点</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>流媒体跨区观看</strong></td>
+					<td style="text-align: left">无法解锁美区独占版权影片，或者频繁跳出代理错误提示</td>
+					<td style="text-align: left">流媒体对机房 IP 实施严格地理检测，香港出口若非原生住宅 IP 极易被降级仅看自制剧</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>国际电商与外贸办公</strong></td>
+					<td style="text-align: left">登录后台触发异地或可疑登录验证，支付网关被风控拦截</td>
+					<td style="text-align: left">频繁变更 IP 或使用被标记为高风险的机房出口会触发商业风控</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>日常搜索引擎与验证码</strong></td>
+					<td style="text-align: left">几乎每次打开网页都会弹出连续的“点选公交车/红绿灯”人机验证</td>
+					<td style="text-align: left">共享出口 IP 历史信誉过低，被安全网关判定为潜在机器人流量</td>
+			</tr>
+	</tbody>
+</table>
+<p>因此，当您发现日常办公工具提示地区限制、或者视频平台无法加载时，根源通常正是因为缺乏合规的美国或其它跨区节点。</p>
+<hr>
+
+<h2 class="relative group">三、排查步骤：是节点真的下线了，还是本地设置问题？
+    <div id="三排查步骤是节点真的下线了还是本地设置问题" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%b8%89%e6%8e%92%e6%9f%a5%e6%ad%a5%e9%aa%a4%e6%98%af%e8%8a%82%e7%82%b9%e7%9c%9f%e7%9a%84%e4%b8%8b%e7%ba%bf%e4%ba%86%e8%bf%98%e6%98%af%e6%9c%ac%e5%9c%b0%e8%ae%be%e7%bd%ae%e9%97%ae%e9%a2%98" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>在确认放弃或更换服务之前，建议按照以下步骤进行自检，排查是否属于本地客户端解析或过滤规则导致的“假性缺失”：</p>
+
+<h3 class="relative group">第一步：排查本地订阅缓存并强制全量更新
+    <div id="第一步排查本地订阅缓存并强制全量更新" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%b8%80%e6%ad%a5%e6%8e%92%e6%9f%a5%e6%9c%ac%e5%9c%b0%e8%ae%a2%e9%98%85%e7%bc%93%e5%ad%98%e5%b9%b6%e5%bc%ba%e5%88%b6%e5%85%a8%e9%87%8f%e6%9b%b4%e6%96%b0" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>客户端（如 Clash Verge Rev、v2rayN、Shadowrocket 等）为了提高启动速度，有时会缓存上一周期的节点信息。</p>
+<ol>
+<li>在客户端的“订阅管理”界面，找到对应的订阅链接；</li>
+<li>建议先右键选择清除缓存或直接点击 <strong>“强制更新订阅”</strong>；</li>
+<li>如果更新时弹出 403、404 或超时提示，说明可能是服务后台的订阅地址发生迁移，具体排查方法可参阅<a href="/posts/2026-subscription-update-failed-troubleshooting/" >机场订阅更新失败排查指南</a>
+。</li>
+</ol>
+
+<h3 class="relative group">第二步：检查客户端是否设置了“节点筛选正则”
+    <div id="第二步检查客户端是否设置了节点筛选正则" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%ba%8c%e6%ad%a5%e6%a3%80%e6%9f%a5%e5%ae%a2%e6%88%b7%e7%ab%af%e6%98%af%e5%90%a6%e8%ae%be%e7%bd%ae%e4%ba%86%e8%8a%82%e7%82%b9%e7%ad%9b%e9%80%89%e6%ad%a3%e5%88%99" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>部分用户在导入配置时无意开启了过滤规则。例如在筛选框中输入了 <code>HK</code> 或 <code>香港</code>，导致客户端自动隐藏了美国（US）、日本（JP）等其他地区节点：</p>
+<ul>
+<li>检查节点分组上方是否有搜索过滤框，确保框内为空；</li>
+<li>检查配置文件的 <code>filter</code> 字段是否有全局过滤限制。</li>
+</ul>
+
+<h3 class="relative group">第三步：检查分流规则与节点连通性延迟
+    <div id="第三步检查分流规则与节点连通性延迟" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%b8%89%e6%ad%a5%e6%a3%80%e6%9f%a5%e5%88%86%e6%b5%81%e8%a7%84%e5%88%99%e4%b8%8e%e8%8a%82%e7%82%b9%e8%bf%9e%e9%80%9a%e6%80%a7%e5%bb%b6%e8%bf%9f" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>如果列表中能看到美国节点，但每次点击测速都显示“Timeout”或红标：</p>
+<ul>
+<li>切换手机热点网络与家庭宽带进行对照测试，排除部分本地宽带运营商的端口阻断问题；</li>
+<li>如果多网络环境下该节点全部超时，说明该出口服务器已经下线或被弃用，属于服务端失效。</li>
+</ul>
+<hr>
+
+<h2 class="relative group">四、低预算用户的理性解决方案：主备搭配策略
+    <div id="四低预算用户的理性解决方案主备搭配策略" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%9b%9b%e4%bd%8e%e9%a2%84%e7%ae%97%e7%94%a8%e6%88%b7%e7%9a%84%e7%90%86%e6%80%a7%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88%e4%b8%bb%e5%a4%87%e6%90%ad%e9%85%8d%e7%ad%96%e7%95%a5" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>低价套餐并非绝对不可接触，但将所有工作、学习和日常连接全部押注在“一元套餐”上，往往会付出极高的时间成本和情绪消耗。</p>
+<p>针对追求高性价比的用户，推荐采用**“低成本主力服务 + 轻量按量/低门槛备用”**的组合策略：</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">                    ┌───────────────────────────────────────────────┐
+</span></span><span class="line"><span class="cl">                    │               日常网络加速需求                 │
+</span></span><span class="line"><span class="cl">                    └───────────────────────┬───────────────────────┘
+</span></span><span class="line"><span class="cl">                                            │
+</span></span><span class="line"><span class="cl">                    ┌───────────────────────┴───────────────────────┐
+</span></span><span class="line"><span class="cl">                    ▼                                               ▼
+</span></span><span class="line"><span class="cl">     【日常主力通道：稳定专线】                      【突发应急备用：按量或低门槛套餐】
+</span></span><span class="line"><span class="cl">  • 覆盖美、日、港、新、英全区域                  • 长期有效不限时，或月费极低
+</span></span><span class="line"><span class="cl">  • 全节点采用真实 IPLC / IEPL 专线               • 用于主力维护时的备用切换
+</span></span><span class="line"><span class="cl">  • 支持流媒体与 AI 工具原生解锁                  • 避免因单线故障陷入失联状态</span></span></code></pre></div></div>
+
+<h3 class="relative group">1. 甄选覆盖全地区原生节点的优质平价服务
+    <div id="1-甄选覆盖全地区原生节点的优质平价服务" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-%e7%94%84%e9%80%89%e8%a6%86%e7%9b%96%e5%85%a8%e5%9c%b0%e5%8c%ba%e5%8e%9f%e7%94%9f%e8%8a%82%e7%82%b9%e7%9a%84%e4%bc%98%e8%b4%a8%e5%b9%b3%e4%bb%b7%e6%9c%8d%e5%8a%a1" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>如果您需要可靠的美国、日本、新加坡等全区域落地，应优先挑选<strong>明确标注节点倍率、采用企业级专线中转、且提供正常工单客服</strong>的正规服务商。即使月费在十几元至二十元区间，其带来的稳定性和免折腾收益也远超一元套餐：</p>
+<ul>
+<li><strong>注重多端并发与全节点平衡</strong>：例如 <a href="/posts/shandianshu-review-2026/" >闪电鼠测评</a>
+ 中实测的全节点 1x 倍率 IEPL 专线，在保持平价的同时提供了覆盖港台日美全区域的高速出口，适合多设备家庭与影音娱乐；</li>
+<li><strong>注重游戏与低延迟跨境办公</strong>：可参考 <a href="/posts/shenxing-review-2026/" >神行加速测评</a>
+，其专线网络针对跨境低延迟和主流海外服务做了专门的路由优化；</li>
+<li><strong>注重纯 IPLC 专线架构与大流量</strong>：如 <a href="/posts/liulianyun-review-2026/" >榴莲云测评</a>
+，全线节点具备较高冗余带宽，能够从根本上避免晚高峰拥堵和节点缩水。</li>
+</ul>
+
+<h3 class="relative group">2. 合理配置客户端的分流规则
+    <div id="2-合理配置客户端的分流规则" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-%e5%90%88%e7%90%86%e9%85%8d%e7%bd%ae%e5%ae%a2%e6%88%b7%e7%ab%af%e7%9a%84%e5%88%86%e6%b5%81%e8%a7%84%e5%88%99" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>在客户端内（例如使用 Clash 或 Sing-box），通过策略组将不同流量精准分流：</p>
+<ul>
+<li>将需要美国原生 IP 的服务（如 AI 助手、美区流媒体）绑定到稳定的美国专线节点；</li>
+<li>将日常普通网页浏览分配给香港节点以追求更低的响应延迟；</li>
+<li>详细的规则配置细节可参考<a href="/posts/2026-rules-and-node-groups-explained/" >分流规则与节点分组白话自救手册</a>
+，避免节点频繁切换导致的网页报错。</li>
+</ul>
+<hr>
+
+<h2 class="relative group">五、总结与建议
+    <div id="五总结与建议" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%ba%94%e6%80%bb%e7%bb%93%e4%b8%8e%e5%bb%ba%e8%ae%ae" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>一元机场“只有香港节点、缺少美国节点”的现象，本质上是<strong>超低资费无法覆盖跨洋带宽采购成本与 IP 维护费用</strong>的必然结果。</p>
+<p>如果您的使用场景仅限于偶尔查阅通用资料，香港节点或许足以应付；但若您需要使用海外主流协同办公平台、人工智能工具或观看跨区流媒体，缺乏稳定海外原生节点的低价服务将很难满足实际需求。合理评估自身的时间成本，选择有正规带宽支撑的稳定专线作为主力，才能在日常网络体验中真正做到省心与高效。</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;title=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="分享到 LinkedIn"
+          aria-label="分享到 LinkedIn">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://twitter.com/intent/tweet/?url=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;text=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="分享到 Twitter"
+          aria-label="分享到 Twitter">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://bsky.app/intent/compose?text=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88&#43;https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/"
+          title="发布到 Bluesky"
+          aria-label="发布到 Bluesky">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256,232.562c-21.183,-41.196 -78.868,-117.97 -132.503,-155.834c-51.378,-36.272 -70.978,-29.987 -83.828,-24.181c-14.872,6.72 -17.577,29.554 -17.577,42.988c0,13.433 7.365,110.138 12.169,126.281c15.873,53.336 72.376,71.358 124.413,65.574c2.66,-0.395 5.357,-0.759 8.089,-1.097c-2.68,0.429 -5.379,0.796 -8.089,1.097c-76.259,11.294 -143.984,39.085 -55.158,137.972c97.708,101.165 133.908,-21.692 152.484,-83.983c18.576,62.291 39.972,180.718 150.734,83.983c83.174,-83.983 22.851,-126.674 -53.408,-137.969c-2.71,-0.302 -5.409,-0.667 -8.089,-1.096c2.732,0.337 5.429,0.702 8.089,1.096c52.037,5.785 108.54,-12.239 124.413,-65.574c4.804,-16.142 12.169,-112.847 12.169,-126.281c-0,-13.434 -2.705,-36.267 -17.577,-42.988c-12.85,-5.806 -32.45,-12.09 -83.829,24.181c-53.634,37.864 -111.319,114.635 -132.502,155.831Z"/></svg></span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://reddit.com/submit/?url=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;resubmit=true&amp;title=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="提交到 Reddit"
+          aria-label="提交到 Reddit">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"/></svg>
+</span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://api.whatsapp.com/send?text=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;resubmit=true&amp;title=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="通过 WhatsApp 分享"
+          aria-label="通过 WhatsApp 分享">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+</span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://t.me/share/url?url=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;resubmit=true&amp;title=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="通过 Telegram 分享"
+          aria-label="通过 Telegram 分享">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+</span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://pinterest.com/pin/create/bookmarklet/?url=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;description=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="钉到 Pinterest"
+          aria-label="钉到 Pinterest">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+</span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;quote=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="分享到 Facebook"
+          aria-label="分享到 Facebook">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="mailto:?body=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/&amp;subject=%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="通过电子邮件发送"
+          aria-label="通过电子邮件发送">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span>
+        </a>
+      
+    
+      
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="https://line.me/R/share?text=https://mofaclashjichang.com/posts/2026-why-one-yuan-airport-only-has-hong-kong-nodes/%20%e4%b8%80%e5%85%83%e6%9c%ba%e5%9c%ba%e4%b8%ba%e4%bb%80%e4%b9%88%e5%8f%aa%e6%9c%89%e9%a6%99%e6%b8%af%e8%8a%82%e7%82%b9%ef%bc%9f%e6%b2%a1%e6%9c%89%e7%be%8e%e5%9b%bd%e8%8a%82%e7%82%b9%e7%9a%84%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90%e4%b8%8e%e4%bd%8e%e6%88%90%e6%9c%ac%e7%a8%b3%e5%ae%9a%e6%9b%bf%e4%bb%a3%e6%96%b9%e6%a1%88"
+          title="分享到 LINE"
+          aria-label="分享到 LINE">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License -https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z" /></svg></span>
+        </a>
+      
+    
+  </section>
+
+
+        
+  
+  
+    <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
+    <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-7_hu_13dc95c486be1996.jpg"
+        alt="一元机场为什么不能用？低价套餐背后的超售、限速与失联成本"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-why-one-yuan-airports-are-unreliable/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          一元机场为什么不能用？低价套餐背后的超售、限速与失联成本
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>2853 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-why-one-yuan-airports-are-unreliable.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场知识
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    安全指南
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E4%B8%80%E5%85%83%E6%9C%BA%E5%9C%BA/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    一元机场
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E4%BD%8E%E4%BB%B7%E6%9C%BA%E5%9C%BA/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    低价机场
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%9C%BA%E5%9C%BA%E9%81%BF%E5%9D%91/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场避坑
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%B6%85%E5%94%AE/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    超售
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%A5%97%E9%A4%90%E9%80%89%E6%8B%A9/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    套餐选择
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%8A%82%E7%82%B9%E7%A8%B3%E5%AE%9A%E6%80%A7/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    节点稳定性
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-8_hu_6f68b889c058fe.jpg"
+        alt="免费机场为什么不能用？从失联、限速到隐私风险一次讲清"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-why-free-airports-are-unreliable/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          免费机场为什么不能用？从失联、限速到隐私风险一次讲清
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>2730 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-why-free-airports-are-unreliable.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场知识
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    安全指南
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%85%8D%E8%B4%B9%E6%9C%BA%E5%9C%BA/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    免费机场
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    免费节点
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%9C%BA%E5%9C%BA%E9%81%BF%E5%9D%91/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场避坑
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%8A%82%E7%82%B9%E7%A8%B3%E5%AE%9A%E6%80%A7/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    节点稳定性
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    隐私安全
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%9C%BA%E5%9C%BA%E9%80%89%E6%8B%A9/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场选择
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-2_hu_3e9a68627a60040b.jpg"
+        alt="机场流量套餐怎么选？从60GB到600GB的真实用量估算指南"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-airport-data-plan-calculator/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          机场流量套餐怎么选？从60GB到600GB的真实用量估算指南
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>1403 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-airport-data-plan-calculator.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场知识
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%9C%BA%E5%9C%BA%E6%B5%81%E9%87%8F/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场流量
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%A5%97%E9%A4%90%E9%80%89%E6%8B%A9/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    套餐选择
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/60gb/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    60GB
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/300gb/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    300GB
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%B5%81%E9%87%8F%E4%BC%B0%E7%AE%97/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    流量估算
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/4k%E8%A7%86%E9%A2%91/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    4K视频
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-8_hu_6f68b889c058fe.jpg"
+        alt="延迟低为什么还是卡？机场节点丢包、抖动、带宽与稳定性详解"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-latency-packet-loss-jitter-guide/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          延迟低为什么还是卡？机场节点丢包、抖动、带宽与稳定性详解
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>1184 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-latency-packet-loss-jitter-guide.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场知识
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%BB%B6%E8%BF%9F/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    延迟
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E4%B8%A2%E5%8C%85/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    丢包
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%8A%96%E5%8A%A8/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    抖动
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%B8%A6%E5%AE%BD/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    带宽
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%8A%82%E7%82%B9%E7%A8%B3%E5%AE%9A%E6%80%A7/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    节点稳定性
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/ping/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Ping
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-7_hu_13dc95c486be1996.jpg"
+        alt="IEPL、IPLC、BGP、CN2 到底有什么区别？2026 机场线路类型选择指南"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-iepl-iplc-bgp-cn2-line-guide/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          IEPL、IPLC、BGP、CN2 到底有什么区别？2026 机场线路类型选择指南
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>1528 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-iepl-iplc-bgp-cn2-line-guide.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%9C%BA%E5%9C%BA%E7%9F%A5%E8%AF%86/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场知识
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/iepl/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    IEPL
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/iplc/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    IPLC
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/bgp/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    BGP
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/cn2/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    CN2
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    专线机场
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E7%BA%BF%E8%B7%AF%E9%80%89%E6%8B%A9/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    线路选择
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-14_hu_9562b6da6aacb846.jpg"
+        alt="机场节点是如何解锁 Netflix 的？DNS 分流、原生住宅 IP 底层原理与防跳车指南"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-how-airport-nodes-unlock-netflix-disney-principle-guide/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          机场节点是如何解锁 Netflix 的？DNS 分流、原生住宅 IP 底层原理与防跳车指南
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>3164 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">7 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-how-airport-nodes-unlock-netflix-disney-principle-guide.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    网络技术
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    使用教程
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/netflix%E8%A7%A3%E9%94%81/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Netflix解锁
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/disney&#43;/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Disney&#43;
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%9C%BA%E5%9C%BA%E4%B8%BB%E8%A7%A3%E9%94%81netflix/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场主解锁netflix
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/dns%E8%A7%A3%E9%94%81/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    DNS解锁
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%8E%9F%E7%94%9Fip/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    原生IP
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%8F%8Cisp/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    双ISP
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%B5%81%E5%AA%92%E4%BD%93%E5%88%86%E6%B5%81/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    流媒体分流
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E9%98%B2%E8%B7%B3%E8%BD%A6/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    防跳车
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-15_hu_17a3015038a3ff31.jpg"
+        alt="连上后国内网站打不开？微信转圈？Clash & Sing-box 节点分组与分流规则“白话自救”手册"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-rules-and-node-groups-explained/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          连上后国内网站打不开？微信转圈？Clash & Sing-box 节点分组与分流规则“白话自救”手册
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>2645 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-rules-and-node-groups-explained.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    使用教程
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%88%86%E6%B5%81%E8%A7%84%E5%88%99/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    分流规则
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E8%8A%82%E7%82%B9%E5%88%86%E7%BB%84/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    节点分组
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    新手教程
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/clash-verge/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Clash Verge
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E7%BD%91%E7%BB%9C%E6%8E%92%E9%94%99/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    网络排错
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-14_hu_9562b6da6aacb846.jpg"
+        alt="2026 新手跨平台客户端保姆级选型与一键导入指南：Win / Mac / iOS / 安卓少走弯路实操手册"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-cross-platform-client-setup-guide/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          2026 新手跨平台客户端保姆级选型与一键导入指南：Win / Mac / iOS / 安卓少走弯路实操手册
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>2913 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-cross-platform-client-setup-guide.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    使用教程
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    客户端配置
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    新手入门
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/clash-verge/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Clash Verge
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/sing-box/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Sing-Box
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    小火箭
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+  
+
+
+
+<article
+  class="article-link--related group relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
+  
+    <div
+      class="flex-none relative overflow-hidden thumbnail_card_related"
+      style="--thumbnail-aspect-ratio: 1.5">
+      <img
+        src="/images/covers/cover-1_hu_22c920c16c5aaf17.jpg"
+        alt="2026 新手小白选购指南：六大主流机场 Clash / Sing-box / 小火箭一键导入与防断流避坑横评"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="nozoom not-prose absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] "
+         />
+    </div>
+  
+  
+  <div class="p-4">
+    <header>
+      <a
+        
+          href="/posts/2026-clash-beginner-airport-selection-guide/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          2026 新手小白选购指南：六大主流机场 Clash / Sing-box / 小火箭一键导入与防断流避坑横评
+          
+        </h2>
+      </a>
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span>2897 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts\2026-clash-beginner-airport-selection-guide.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场测评
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/categories/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    使用教程
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    机场测评
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    新手教程
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/clash%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Clash配置教程
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    小火箭配置
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/tags/2026%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    2026机场推荐
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+      
+    </section>
+  
+
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2026-how-airport-nodes-unlock-netflix-disney-principle-guide/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;机场节点是如何解锁 Netflix 的？DNS 分流、原生住宅 IP 底层原理与防跳车指南
+              </span>
+            </a>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="返回顶部"
+    title="返回顶部">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+      
+      
+        
+          
+          
+      
+      
+      
+      <nav aria-label="" class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 ">
+        <ul class="flex list-none flex-col sm:flex-row">
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/"
+                title="">
+                
+                首页
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/posts/"
+                title="">
+                
+                博客归档
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/disclaimer/"
+                title="">
+                
+                免责声明
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          魔法Clash机场
+      </p>
+    
+  </div>
+  
+    
+
+
+  
+</footer>
+<div
+  id="search-wrapper"
+  role="dialog"
+  aria-modal="true"
+  aria-label="搜索"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          aria-label="搜索"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+    
+    
+      
+      
+      
+        
+      
+      
+        <div id="background-canvas" aria-hidden="true" class="pointer-events-none fixed inset-0 -z-20">
+          <img
+            src="/images/v3/site-background.svg"
+            role="presentation"
+            loading="eager"
+            decoding="async"
+            class="nozoom h-full w-full object-cover"
+            alt="魔法Clash机场测速推荐" />
+          <div class="absolute inset-0 bg-neutral/75 dark:bg-neutral-800/60"></div>
+        </div>
+      
+    
+  </body>
+  
+</html>
