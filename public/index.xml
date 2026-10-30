@@ -95,7 +95,7 @@
       <pubDate>Sat, 03 Oct 2026 10:30:00 +0800</pubDate>
       
       <guid>https://mofaclashjichang.com/posts/2026-why-one-yuan-airports-are-unreliable/</guid>
-      <description>一元套餐降低了购买门槛，却无法消除线路和运维成本。真正要比较的是晚间可用性、售后、出口质量与失败后的时间成本。</description>
+      <description>深度解析一元机场为什么不能用？本文从带宽超售、晚高峰严重限速、共享万人出口IP导致ChatGPT与流媒体风控封锁、无售后运维保障与高跑路风险等多维度深度剖析，为低预算用户提供高性价比、稳定不折腾的优质备用翻墙与防坑选择策略指南。</description>
       
     </item>
     
@@ -105,7 +105,7 @@
       <pubDate>Sat, 03 Oct 2026 10:00:00 +0800</pubDate>
       
       <guid>https://mofaclashjichang.com/posts/2026-why-free-airports-are-unreliable/</guid>
-      <description>免费线路看似省钱，却常把成本转化为等待时间、账号风险和不可预测的中断。本文帮你判断哪些场景不能依赖免费服务。</description>
+      <description>免费机场为什么不能用？深入揭秘免费节点频繁断流、速度极慢、晚高峰严重卡顿背后的真实代价。全面剖析公共出口IP被风控拉黑、中间人流量嗅探与隐私泄漏风险，客观对比公益节点与商业专线差距，教你如何避开免费陷阱并挑选安全高可靠的翻墙方案。</description>
       
     </item>
     
@@ -175,7 +175,7 @@
       <pubDate>Mon, 28 Sep 2026 10:00:00 +0800</pubDate>
       
       <guid>https://mofaclashjichang.com/posts/2026-router-proxy-vs-device-client-guide/</guid>
-      <description>家庭多设备应该在路由器统一配置，还是每台设备单独安装客户端？</description>
+      <description>家庭网络科学上网选路由器代理还是独立客户端？本文全方位对比软路由、OpenWrt旁路由与手机电脑单机客户端的优缺点、维护成本与性能损耗。专为Apple TV、索尼智能电视、PS5/Switch游戏主机多设备流媒体4K解锁提供最清晰合理的网络搭建选型指南。</description>
       
     </item>
     
@@ -235,7 +235,7 @@
       <pubDate>Tue, 22 Sep 2026 10:00:00 +0800</pubDate>
       
       <guid>https://mofaclashjichang.com/posts/2026-subscription-update-failed-troubleshooting/</guid>
-      <description>从订阅地址、网络、客户端格式到服务后台逐步排查更新失败。</description>
+      <description>机场订阅更新失败怎么办？全网最全故障排查指南，深度解决Clash Verge Rev、Sing-box、Shadowrocket导入出现的403 Forbidden、404 Not Found、连接超时、订阅为空无节点、证书错误与YAML解析失败问题，手把手教你恢复网络连接并确保节点配置正常更新。</description>
       
     </item>
     

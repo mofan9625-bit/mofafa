@@ -3,8 +3,8 @@ title: "机场订阅更新失败怎么办？403、404、超时、无节点完整
 date: 2026-09-22T10:00:00+08:00
 lastmod: 2026-09-22T10:00:00+08:00
 draft: false
-description: "机场订阅更新失败排查教程，解决403、404、请求超时、订阅为空、无节点、配置解析失败和客户端导入异常。"
-summary: "从订阅地址、网络、客户端格式到服务后台逐步排查更新失败。"
+description: "机场订阅更新失败怎么办？全网最全故障排查指南，深度解决Clash Verge Rev、Sing-box、Shadowrocket导入出现的403 Forbidden、404 Not Found、连接超时、订阅为空无节点、证书错误与YAML解析失败问题，手把手教你恢复网络连接并确保节点配置正常更新。"
+summary: "机场订阅更新失败怎么办？全网最全故障排查指南，深度解决Clash Verge Rev、Sing-box、Shadowrocket导入出现的403 Forbidden、404 Not Found、连接超时、订阅为空无节点、证书错误与YAML解析失败问题，手把手教你恢复网络连接并确保节点配置正常更新。"
 categories: ["使用教程"]
 tags: ["订阅更新失败", "403", "404", "Clash订阅", "无节点", "故障排查"]
 featureimage: "images/covers/cover-15.jpg"
