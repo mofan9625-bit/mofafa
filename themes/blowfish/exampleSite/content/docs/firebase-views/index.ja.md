@@ -27,7 +27,7 @@ import { getAnalytics } from "firebase/analytics";
 // ウェブアプリの Firebase 設定
 // Firebase JS SDK v7.20.0 以降では、measurementId はオプションです
 const firebaseConfig = {
-  apiKey: "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY",
+  apiKey: "AIzaSy_REPLACE_WITH_YOUR_API_KEY",
   authDomain: "blowfish-21fff.firebaseapp.com",
   projectId: "blowfish-21fff",
   storageBucket: "blowfish-21fff.appspot.com",

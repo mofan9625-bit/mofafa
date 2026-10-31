@@ -27,7 +27,7 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY",
+  apiKey: "AIzaSy_REPLACE_WITH_YOUR_API_KEY",
   authDomain: "blowfish-21fff.firebaseapp.com",
   projectId: "blowfish-21fff",
   storageBucket: "blowfish-21fff.appspot.com",

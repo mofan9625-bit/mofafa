@@ -60,22 +60,6 @@ function getReviewsHtmlContent() {
       }
     })();
   </script>
-  <script id="firebase-config" 
-          type="application/json"
-          data-views="views_reviews"
-          data-likes="likes_reviews">
-    {
-      "config": {
-        "apiKey": "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY",
-        "authDomain": "blowfish-21fff.firebaseapp.com",
-        "projectId": "blowfish-21fff",
-        "storageBucket": "blowfish-21fff.appspot.com",
-        "messagingSenderId": "60108104191",
-        "appId": "1:60108104191:web:039842ebe1370698b487ca",
-        "measurementId": "G-PEDMYR1V0K"
-      }
-    }
-  </script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
