@@ -179,8 +179,15 @@ function buildSitemap() {
           const rawLoc = locMatch[1].trim();
           const loc = normalizeUrl(rawLoc);
           const pathOnly = loc.replace(BASE_URL, '');
-          // 彻底排除承接页与外部跳转中转路径，严禁进入站点地图
-          if (pathOnly === '/go.html' || pathOnly === '/go' || pathOnly.startsWith('/go/')) {
+          // 彻底排除承接页与外部跳转中转路径，以及已重定向至 .html 的旧镜像路径，严禁进入站点地图
+          if (
+            pathOnly === '/go.html' || pathOnly === '/go' || pathOnly.startsWith('/go/') ||
+            pathOnly === '/reviews/' ||
+            pathOnly.startsWith('/posts/shenxing-review-2026') ||
+            pathOnly.startsWith('/posts/liulianyun-review-2026') ||
+            pathOnly.startsWith('/posts/shandianshu-review-2026') ||
+            pathOnly.startsWith('/posts/2026-beginner-clash-guide')
+          ) {
             continue;
           }
           const cleanLastmod = lastmodMatch ? formatDate(lastmodMatch[1].trim()) : '2026-10-18';
@@ -208,10 +215,19 @@ function buildSitemap() {
   for (const filePath of allHtml) {
     const rel = path.relative(PUBLIC_DIR, filePath).split(path.sep).join('/');
     
-    // 排除非公开/系统文件与重定向承接页
+    // 排除非公开/系统文件与重定向承接页及非规范镜像目录
     if (rel === '404.html') continue;
     if (rel.includes('/page/')) continue; // 排除分页重复页
     if (rel === 'go.html' || rel === 'go' || rel.startsWith('go/')) continue;
+    if (rel === 'reviews/index.html') continue; // 统一为 /reviews.html
+    if (
+      rel.startsWith('posts/shenxing-review-2026') ||
+      rel.startsWith('posts/liulianyun-review-2026') ||
+      rel.startsWith('posts/shandianshu-review-2026') ||
+      rel.startsWith('posts/2026-beginner-clash-guide')
+    ) {
+      continue;
+    }
 
     let urlPath = '';
     if (rel === 'index.html') {
@@ -236,20 +252,14 @@ function buildSitemap() {
     }
   }
 
-  // 3. 补充关键单品与支柱落地页（强制保障存在性）
+  // 3. 补充关键单品与支柱落地页（强制保障存在性与规范性）
   const criticalUrls = [
     { path: '/article-2026-beginner-clash-guide.html', priority: '1.0', changefreq: 'weekly' },
     { path: '/article-liulianyun-2026-review.html', priority: '0.9', changefreq: 'monthly' },
     { path: '/article-shandianshu-2026-review.html', priority: '0.9', changefreq: 'monthly' },
     { path: '/article-shenxing-2026-review.html', priority: '0.9', changefreq: 'monthly' },
     { path: '/reviews.html', priority: '0.9', changefreq: 'weekly' },
-    { path: '/reviews/', priority: '0.9', changefreq: 'weekly' },
-    { path: '/archive.html', priority: '0.6', changefreq: 'weekly' },
-    { path: '/posts/2026-beginner-clash-guide/', priority: '0.9', changefreq: 'weekly' },
-    { path: '/posts/liulianyun-review-2026/', priority: '0.9', changefreq: 'monthly' },
-    { path: '/posts/shandianshu-review-2026/', priority: '0.9', changefreq: 'monthly' },
-    { path: '/posts/shenxing-review-2026/', priority: '0.9', changefreq: 'monthly' },
-    { path: '/posts/2026-clash-beginner-airport-selection-guide.html', priority: '0.9', changefreq: 'weekly' }
+    { path: '/archive.html', priority: '0.6', changefreq: 'weekly' }
   ];
 
   for (const item of criticalUrls) {
@@ -386,10 +396,22 @@ function validateXml(xmlString, expectedCount) {
     if (loc.includes('&amp;amp;')) {
       throw new Error(`检测到双重转义: ${loc}`);
     }
-    // 严格检查是否包含 /go/ 或 /go.html
+    // 严格检查是否包含 /go/、/go.html、非规范镜像或无后缀文章路径
     const pathOnly = loc.replace(BASE_URL, '');
     if (pathOnly === '/go.html' || pathOnly === '/go' || pathOnly.startsWith('/go/')) {
       throw new Error(`站点地图中检测到禁止收录的重定向/承接页路径: ${loc}`);
+    }
+    if (
+      pathOnly.startsWith('/posts/shenxing-review-2026') ||
+      pathOnly.startsWith('/posts/liulianyun-review-2026') ||
+      pathOnly.startsWith('/posts/shandianshu-review-2026') ||
+      pathOnly.startsWith('/posts/2026-beginner-clash-guide') ||
+      pathOnly === '/reviews/'
+    ) {
+      throw new Error(`站点地图中检测到已被重定向的非规范镜像路径: ${loc}`);
+    }
+    if (pathOnly.startsWith('/article-') && !pathOnly.endsWith('.html')) {
+      throw new Error(`站点地图中检测到缺少 .html 后缀的非规范文章路径: ${loc}`);
     }
   }
 

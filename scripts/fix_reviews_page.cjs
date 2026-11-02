@@ -236,7 +236,7 @@ const CLEAN_GRID_HTML = `<section class="w-full grid grid-cols-1 md:grid-cols-2 
             <div class="p-4">
               <header>
                 <a
-                  href="/posts/liulianyun-review-2026/"
+                  href="/article-liulianyun-2026-review.html"
                   class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
                   <h2>2026 榴莲云机场使用评测：全节点 1x IPLC 专线实测与长周期套餐横评</h2>
                 </a>
@@ -268,7 +268,7 @@ const CLEAN_GRID_HTML = `<section class="w-full grid grid-cols-1 md:grid-cols-2 
           </div>
           
           <div class="px-4 pb-4 pt-2 border-t border-neutral-200/60 dark:border-neutral-700/60 flex items-center justify-between text-xs z-10">
-            <a href="/posts/liulianyun-review-2026/" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
+            <a href="/article-liulianyun-2026-review.html" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
             <a href="/go.html?id=liulianyun" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
@@ -287,7 +287,7 @@ const CLEAN_GRID_HTML = `<section class="w-full grid grid-cols-1 md:grid-cols-2 
             <div class="p-4">
               <header>
                 <a
-                  href="/posts/shenxing-review-2026/"
+                  href="/article-shenxing-2026-review.html"
                   class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
                   <h2>2026 神行加速测评：BGP 中转专线 + FullCone NAT 电竞级与追剧实测</h2>
                 </a>
@@ -319,7 +319,7 @@ const CLEAN_GRID_HTML = `<section class="w-full grid grid-cols-1 md:grid-cols-2 
           </div>
           
           <div class="px-4 pb-4 pt-2 border-t border-neutral-200/60 dark:border-neutral-700/60 flex items-center justify-between text-xs z-10">
-            <a href="/posts/shenxing-review-2026/" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
+            <a href="/article-shenxing-2026-review.html" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
             <a href="/go.html?id=shenxing" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
@@ -338,7 +338,7 @@ const CLEAN_GRID_HTML = `<section class="w-full grid grid-cols-1 md:grid-cols-2 
             <div class="p-4">
               <header>
                 <a
-                  href="/posts/shandianshu-review-2026/"
+                  href="/article-shandianshu-2026-review.html"
                   class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
                   <h2>2026 闪电鼠怎么样？全节点 1x IEPL 专线体验与年付避坑指南</h2>
                 </a>
@@ -370,7 +370,7 @@ const CLEAN_GRID_HTML = `<section class="w-full grid grid-cols-1 md:grid-cols-2 
           </div>
           
           <div class="px-4 pb-4 pt-2 border-t border-neutral-200/60 dark:border-neutral-700/60 flex items-center justify-between text-xs z-10">
-            <a href="/posts/shandianshu-review-2026/" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
+            <a href="/article-shandianshu-2026-review.html" class="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               阅读完整评测 &rarr;
             </a>
             <a href="/go.html?id=shandianshu" target="_blank" rel="nofollow sponsored noopener noreferrer" class="text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200">
