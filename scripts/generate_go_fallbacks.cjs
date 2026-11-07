@@ -4,7 +4,7 @@ const path = require('path');
 const ROOT_DIR = path.resolve(__dirname, '..');
 
 const REDIRECT_MAP = {
-  'yunjiexian': { name: '云界线 (Yunjiexian)', url: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L' },
+  'yunjiexian': { name: '云界线 (Yunjiexian)', url: 'https://lier01.yunjiexianaff.com/#/?code=xPthfI62' },
   'dalaoyun': { name: '大佬云 (Dalaoyun)', url: 'https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V' },
   'huanqiuti': { name: '环球梯 (Huanqiuti)', url: 'https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU' },
   'liulianyun': { name: '榴莲云 (Liulianyun)', url: 'https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR' },

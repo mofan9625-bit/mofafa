@@ -6,8 +6,8 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const AFF_MAP = [
   {
     id: 'yunjiexian',
-    url: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L',
-    regexUrl: /https:\/\/9625mofan01\.yunjiexianaff\.com\/#\/\?code=OOYhSj0L/g
+    url: 'https://lier01.yunjiexianaff.com/#/?code=xPthfI62',
+    regexUrl: /https:\/\/lier01\.yunjiexianaff\.com\/#\/\?code=xPthfI62/g
   },
   {
     id: 'dalaoyun',

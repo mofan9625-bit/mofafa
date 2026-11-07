@@ -4,7 +4,7 @@
 # ==============================================================================
 
 # 1. 核心专线机场 302 临时重定向 (路径模式)
-/go/yunjiexian    https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L    302!
+/go/yunjiexian    https://lier01.yunjiexianaff.com/#/?code=xPthfI62    302!
 /go/dalaoyun      https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V       302!
 /go/huanqiuti     https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU      302!
 /go/liulianyun    https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR        302!
@@ -14,7 +14,7 @@
 /go/sujie         https://pygllc.speedworldaff.cc/#/?code=f3fRpBfX            302!
 
 # 2. 尾随斜杠规范化兼容
-/go/yunjiexian/   https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L    302!
+/go/yunjiexian/   https://lier01.yunjiexianaff.com/#/?code=xPthfI62    302!
 /go/dalaoyun/     https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V       302!
 /go/huanqiuti/    https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU      302!
 /go/liulianyun/   https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR        302!
@@ -24,7 +24,7 @@
 /go/sujie/        https://pygllc.speedworldaff.cc/#/?code=f3fRpBfX            302!
 
 # 3. Netlify Query 参数重定向 (/go.html?id=xxx)
-/go.html id=yunjiexian    https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L    302!
+/go.html id=yunjiexian    https://lier01.yunjiexianaff.com/#/?code=xPthfI62    302!
 /go.html id=dalaoyun      https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V       302!
 /go.html id=huanqiuti     https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU      302!
 /go.html id=liulianyun    https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR        302!
