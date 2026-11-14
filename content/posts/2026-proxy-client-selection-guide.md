@@ -3,7 +3,7 @@ title: "Windows、macOS、iPhone、Android代理客户端怎么选？2026工具�
 date: 2026-09-26T10:00:00+08:00
 lastmod: 2026-09-26T10:00:00+08:00
 draft: false
-description: "2026代理客户端选择指南，对比Clash Verge Rev、Shadowrocket、v2rayN、Clash Meta for Android、Karing和v2rayNG适用平台。"
+description: "2026跨平台代理客户端权威选型横评全景指南！深度对比Windows、macOS、iOS与Android四大系统主流工具。全面剖析Clash Verge Rev、Sing-box、Shadowrocket、Karing、v2rayN的内存占用、规则分流灵活性与协议兼容度，助不同需求用户快速锁定最契合的翻墙利器。"
 summary: "根据系统、订阅格式和使用难度选择合适客户端。"
 categories: ["使用教程"]
 tags: ["代理客户端", "Clash Verge Rev", "Shadowrocket", "v2rayN", "Karing", "v2rayNG"]

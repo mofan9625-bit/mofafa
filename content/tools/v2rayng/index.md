@@ -1,6 +1,6 @@
 ---
 title: "v2rayNG 使用教程"
-description: "v2rayNG 官方下载、订阅导入、节点选择、VPN 启动和常见问题教程。"
+description: "v2rayNG安卓手机客户端新手保姆级安装与配置使用指南！专为Android手机与平板打造的成熟老牌代理工具。详细演示V2Ray/Xray通用订阅导入、节点真连接延迟测速、分应用分流策略配置与开机自启动防杀后台技巧，手把手排查安卓系统省电模式误断流与节点超时故障，助你轻松实现全天候稳定高速的移动端翻墙上网体验。"
 layout: "simple"
 showTableOfContents: true
 sitemap:

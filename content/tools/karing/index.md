@@ -1,6 +1,6 @@
 ---
 title: "Karing 使用教程"
-description: "Karing 官方下载、订阅导入、节点选择、路由模式与同步功能教程。"
+description: "Karing客户端保姆级新手配置与订阅导入使用指南！兼容iOS、Windows、macOS、Android全平台的轻量代理工具。详细演示Clash与Sing-box订阅一键导入解析、自动测速选线、分流规则配置与开机自启防断流技巧，彻底解决连接超时与分流混乱痛点，新手小白轻松掌握多端零门槛跨区上网体验。"
 layout: "simple"
 showTableOfContents: true
 sitemap:

@@ -3,7 +3,7 @@ title: "2026 Clash Verge Rev 使用说明教程：下载安装、导入订阅与
 date: 2026-09-30T16:20:00+08:00
 lastmod: 2026-09-30T16:20:00+08:00
 draft: false
-description: "2026 年 Clash Verge Rev 中文使用教程，详细讲解 Windows、macOS、Linux 下载安装、导入订阅、选择节点、系统代理、TUN 模式、规则模式与常见故障排查。"
+description: "Clash Verge Rev电脑端保姆级配置与进阶调优指南！专为Windows与macOS用户打造的下一代Mihomo内核图形客户端。详细演示订阅链接一键导入解析、智能分流规则切换、TUN虚拟网卡模式开启与DNS防泄漏防污染设置，排查节点超时与端口冲突，帮助电脑端新手快速打造无感流畅的全球网络访问环境。"
 summary: "从下载安装到导入订阅、选择节点、开启系统代理和排查连接故障，一篇读懂 2026 年 Clash Verge Rev 的基础使用方法。"
 categories: ["使用教程"]
 tags: ["Clash", "Clash Verge Rev", "Mihomo", "代理客户端", "新手教程"]

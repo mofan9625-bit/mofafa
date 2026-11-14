@@ -1,6 +1,6 @@
 ---
 title: "工具使用"
-description: "代理工具安装、配置、订阅导入及常见问题使用教程。"
+description: "2026常用科学上网客户端工具全平台下载与配置教程汇总！涵盖主流系统代理软件。深度整理Clash Verge Rev、Sing-box、Shadowrocket、Karing、v2rayN官方安全下载通道、订阅导入流程、分流设置与故障排查指南，助各平台用户零门槛搭建高效稳定网络通道与节点加速服务体系。"
 layout: "simple"
 showTableOfContents: false
 sitemap:

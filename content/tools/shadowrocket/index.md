@@ -1,6 +1,6 @@
 ---
 title: "Shadowrocket 使用教程"
-description: "Shadowrocket 官方下载安装、订阅导入、节点选择和常见问题教程。"
+description: "Shadowrocket小火箭iOS新手保姆级安装与使用教程！涵盖苹果外区Apple ID获取途径与正版安装验证指南。详解节点订阅一键扫码导入、全局与分流规则配置、HTTPS解密证书安装、延迟测速与节点防断流调优技巧，全面满足iPhone/iPad用户无感解锁Netflix、YouTube与海外日常办公需求。"
 layout: "simple"
 showTableOfContents: true
 sitemap:

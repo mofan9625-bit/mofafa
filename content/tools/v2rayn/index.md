@@ -1,6 +1,6 @@
 ---
 title: "v2rayN 使用教程"
-description: "v2rayN 官方下载、订阅分组、节点更新、系统代理与故障排查教程。"
+description: "v2rayN电脑端新手配置与进阶使用指南！支持Windows平台的经典网络代理工具。系统演示V2Ray、Xray及Sing-box订阅一键导入解析、核心组件升级、路由分流规则管理与系统代理模式切换技巧，详细排查端口冲突无法上网与证书报错痛点，帮助Windows办公与娱乐用户打造纯净快速的桌面端网络代理环境。"
 layout: "simple"
 showTableOfContents: true
 sitemap:

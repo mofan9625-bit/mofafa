@@ -3,7 +3,7 @@ title: "代理已连接为什么网站仍识别本地地区？DNS、WebRTC与IPv
 date: 2026-09-27T10:00:00+08:00
 lastmod: 2026-09-27T10:00:00+08:00
 draft: false
-description: "排查代理连接后的DNS泄漏、WebRTC本地地址暴露、IPv6绕过和浏览器地区不一致，解决网站定位异常。"
+description: "代理已连上但访问受限或暴露真实位置？深度剖析DNS解析泄漏、WebRTC真实IP泄漏与IPv6通道旁路绕行三大隐私隐患。提供主流浏览器（Chrome/Firefox/Edge）安全调优、Clash/Sing-box防污染规则设置及虚拟网卡阻断教程，全面封堵隐私漏洞，彻底规避跨区账号风控识别，保障端到端高安全匿名访问。"
 summary: "连接节点后地区仍不一致，问题可能来自DNS、IPv6或浏览器会话。"
 categories: ["使用教程"]
 tags: ["DNS泄漏", "WebRTC", "IPv6", "IP泄漏", "地区识别"]
